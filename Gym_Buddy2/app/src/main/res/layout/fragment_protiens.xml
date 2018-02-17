@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dscudr.gym_buddy.gym_buddy.Protiens">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whey Protien"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="romoe lean muscle growth and fat lose , Cardiovascular health."
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Casien Protien"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:layout_height="wrap_content"
+            android:text="Formed from eperation of milk with a acidic solution helps in fat gain"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egg Protien"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/Black"
+            android:text="Obtained after dehydration of egg whites Exclusive source of vitamins and minrals"
+            />
+
+
+
+    </LinearLayout>
+</ScrollView>

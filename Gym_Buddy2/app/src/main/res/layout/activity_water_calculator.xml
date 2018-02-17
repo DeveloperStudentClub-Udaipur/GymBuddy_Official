@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dscudr.gym_buddy.gym_buddy.WaterCalculator">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="10dp"
+        android:id="@+id/appbar"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            />
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_below="@id/appbar"
+        android:text="@string/inform"
+        android:textSize="@dimen/text_heading_med"
+        android:layout_margin="@dimen/margin_big"
+        android:textColor="@color/Black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hint"
+        android:text="@string/enter_weight"
+        android:layout_below="@+id/info"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_standard"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_weight"
+        android:layout_margin="@dimen/margin_big"
+        android:layout_below="@id/hint"
+        android:hint="Kg"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input_weight"
+        android:layout_margin="@dimen/margin_big"
+        android:text="Calculate"
+        android:backgroundTint="@color/blue_success"
+        android:backgroundTintMode="src_in"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="@dimen/text_heading_med" />
+
+    <RelativeLayout
+        android:id="@+id/r_n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="69dp">
+
+
+        <Switch
+            android:id="@+id/sw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:text="Reminder Notification"
+            android:textColor="@color/Black" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

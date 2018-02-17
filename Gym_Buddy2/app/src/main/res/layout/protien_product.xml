@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/product"
+            android:elevation="8dp"
+            android:layout_margin="10dp"
+            android:background="@color/light_grey"
+            >
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:id="@+id/product_image"
+            android:src="@drawable/whey_box"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:id="@+id/Detail"
+                android:text="Whey Protein"
+                android:textColor="@color/Black"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rate"
+            android:textColor="@color/Black"
+            android:text="$134"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+
+        </LinearLayout>
+
+</RelativeLayout>

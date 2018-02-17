@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/exe_card"
+        android:padding="5dp"
+        android:elevation="8dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="@color/Black">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            >
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:src="@drawable/pushup"
+                android:id="@+id/exe_img"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Push Ups"
+                android:layout_below="@id/exe_img"
+                android:id="@+id/exe_name"
+                android:padding="5dp"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

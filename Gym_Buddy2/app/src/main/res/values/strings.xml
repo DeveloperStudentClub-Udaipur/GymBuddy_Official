@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Gym_Buddy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_aboutus">About Us</string>
+    <string name="dsc">Developer Student Club</string>
+    <string name="about">DSC is a Google Developers program for university students, designed to help them build their mobile and web development skills and knowledge. It is open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. It is intended to be a space for students to learn and collaborate as they solve mobile and web development problems. We provide Android Training and Projects which help local business and community to grow. </string>
+    <string name="abt_dsc">About DSC </string>
+    <string name="set">3 sets of 20 Repetations</string>
+    <string name="contact">Contact Us</string>
+    <string name="phone">7665738184</string>
+    <string name="sdcl">Developer Student Club Lead</string>
+    <string name="lead_name">Akshay Nandwana</string>
+    <string name="dev_name">Mohit Chug</string>
+    <string name="lable_setting">Settings</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="prechercurl">1.) Place an EZ bar on the rack of preacher bench and load it with appropriate weight./n 2.) Adjust the bench and seating’s height until the benchreaches a comfortable position under across chest andunder armpits, while allowing full extension of upper armsand forearms.3.) Grasp bar with both hands and connect biceps tobring the bar towards the face.4.) Once at full concentration , with a controlled motionreverse the bar’s direction and back until the biceps are extended to complete the repetition.</string>
+
+    <string-array name="nav_item_activity_titles">
+        <item>Day Wise</item>
+        <item>Body Part Wise</item>
+        <item>Diet Plans</item>
+        <item>Utilities</item>
+        <item>Dietary Suppliments</item>
+        <item>Settings</item>
+    </string-array>
+    <string name="inform">Enter Your Weight For Calculate the amount of water ideal for your Consumption .</string>
+    <string name="enter_weight">Enter Your Weight Here</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
