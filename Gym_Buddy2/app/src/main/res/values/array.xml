@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titels">
+        <item>Day Wise</item>
+        <item>Body Part Wise</item>
+        <item>Diet Plan</item>
+        <item>Utilities</item>
+        <item>Competitions</item>
+        <item>Diatry Suppliments</item>
+        <item>Setting</item>
+    </string-array>
+    <string-array name="exercise_name_mon_thu">
+        <item>Push Ups</item>
+        <item>Pull Ups</item>
+        <item>Flat Bench Press</item>
+        <item>Incline Dumbell Press</item>
+        <item>Decline Press</item>
+        <item>Incline Bench Dumbell Fly</item>
+        <item>Chest Dips</item>
+        <item>Dumbell Bent Arm Pullover</item>
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exercise_name_tue_fri">
+        <item>Dumbell Curls</item>
+        <item>Preacher Curls</item>
+        <item>Cable Curls</item>
+        <item>Concentration Curls</item>
+        <item>Triceps Extention Curls</item>
+        <item>Cable Triceps Extention</item>
+        <item>Militry Press</item>
+        <item>Dumbell Press</item>
+        <item>Seated Militry Press</item>
+        <item>Dumbell Lateral Raises</item>
+        <item>Cable Front Raises</item>
+        <item>Up Right Rows</item>
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exersice_name_wed_sat">
+        <item>Lat Pull Downs</item>
+        <item>Seated Cable rows</item>
+        <item>Close Grip Front Lat Pull Downs</item>
+        <item>Chin Ups</item>
+        <item>Close grip Bench Press</item>
+        <item>Narrow Grip Push Ups</item>
+        <item>Barell Squats</item>
+        <item>Front Barell Squats</item>
+        <item>calves leg Press</item>
+        <item>Sumo Squat</item>
+        <item>squats</item>
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exersice_name_back">
+        <item>Lat Pull Downs</item>
+        <item>Seated Cable rows</item>
+        <item>Close Grip Front Lat Pull Downs</item>
+        <item>Chin Ups</item>
+        <item>Close grip Bench Press</item>
+        <item>Narrow Grip Push Ups</item>
+    </string-array>
+    <string-array name="exersice_name_biceps">
+        <item>Dumbell Curls</item>
+        <item>Preacher Curls</item>
+        <item>Cable Curls</item>
+        <item>Concentration Curls</item>
+    </string-array>
+    <string-array name="exersice_name_chest">
+        <item>Push Ups</item>
+        <item>Pull Ups</item>
+        <item>Flat Bench Press</item>
+        <item>Incline Dumbell Press</item>
+        <item>Decline Press</item>
+        <item>Incline Bench Dumbell Fly</item>
+        <item>Chest Dips</item>
+    </string-array>
+    <string-array name="exersice_name_triceps">
+        <item>Dumbell Bent Arm Pullover</item>
+        <item>Cable Triceps Extention</item>
+    </string-array>
+    <string-array name="exersice_name_legs">
+        <item>Barell Squats</item>
+        <item>Front Barell Squats</item>
+        <item>calves leg Press</item>
+        <item>Sumo Squat</item>
+        <item>squats</item>
+    </string-array>
+    <string-array name="exersice_name_shoulder">
+        <item>Militry Press</item>
+        <item>Dumbell Press</item>
+        <item>Seated Militry Press</item>
+        <item>Dumbell Lateral Raises</item>
+        <item>Cable Front Raises</item>
+        <item>Up Right Rows</item>
+    </string-array>
+    <string-array name="exersice_name_abs">
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exersice_details_mon_thu">
+        <item>
+            Lie prone with your arms straight, your palms flat on the floor , and your hands shoulder-width apart (or wider). Hold your feet together or very slightly Spread inhale and bend your elbow to bring your torso near the floor, avoiding extreem hyperextention.
+        </item>
+        <item>
+            1) Grip a pullup bar with your palms facing towards each other. When you pull your self up with your hands
+            facing this way, you give your biceps and lats a Great workout. Pulling yourself up with your palms out is considered the most
+            dificult way to pull up your body weight Start with your arms almost fully extended .
+            2.) Pull your body weight up until your chin is slightly above the bar .
+            3.) Lower Yourself Until Your Arms are almost full extended .
+            4.) Do unother pull up .
+        </item>
+        <item>
+            To properly perform a bench press exercise you need to lay flat
+            on rent and have you your feet flat on floor the bar when erect
+            will be slightly behind your head it's important to use supporter for this
+            exercise especially if you are using a free bar or dumbbells eliminate the chance
+            of dropping the weight on yourself once you have lifted the weight of the Wreck the bar will
+            be directly over the centre of the chest keep your head on the bench at all the time to throughout
+            the moment once you have the bar study slowly it to about chess level if you are able to keep your
+            arm pointed out reaching the bottom bottom
+            of the moment price the bar backup and extended position for coaching position focusing on
+        </item>
+        <item>
+            1 Two dumbbells and Lion of flat bench face up extend your arm up with your palms facing Each Other bend your elbow slightly and keep them fixed throughout the exercise
+                <br/>2 keeping your arms perpendicular to your torso slowly lower the dumbbells in a semi-circular motion until your arms are in parallel with the floor.
+                <br/>3. Slowly raises the dumbbells along the same arc back to the starting point
+        </item>
+        <item>
+            Set at an angle between 20 and 40-degree wheat export to prevent them from slipping Ek and overhand grip on the bar with your hands at the shoulder with apart
+            <br/>1. In hell and slowly lower the bar until it reaches the lower edge of your pectorals.
+            <br/> 2. Press the bar back up, exhaling as you as you complete the movement.
+        </item>
+        <item>
+              To perform dumbbell flyes pick up a relatively lightweight in each hand you will need to experiment to determine how much weight is right for your dumbbell flyes to start with a lighter weight then slowly work your way up lie down on a weight bench and raise both dumbbells straight up over your chest with your arms
+              straight this is your starting position spread both arms out word in a wide arc until your arms are out at your side your arms can be slightly bent this is a part of dumbbell flyes it is called that because you look like you're flying follow the same are back up until the dumbbells return to the starting position this is one repetition of the dumbbell fly.
+        </item>
+        <item>
+                1.Keep your head down during the course of the moment and move your body forward 2.move your elbows out a bit that keeps your elbows out and away from your body this will ensure that you are using more chest than triceps remember really concentrate on squeezing your entire chest area at the top of the movement
+        </item>
+        <item>
+                This is very similar to the bent arm barbell pullover except that you will be using a dumbbell instead of a barbell line flat on your back on a flat bench begin by holding the barbell above chest with your elbow slightly bent slowly lower the dumbbell back so as to stretch your arms (and the dumbbell) back behind your head as far as you can reach your arms and dumbbell will actually go behind above your head and will drop down below the belt this will really give you a great stretch return the dumbbell to the start position slowly focusing on keeping your elbows blocked in the slightly bent position
+        </item>
+        <item>
+            1.)	Lie on floor with your face up, your knees bent and your feet on floor.
+            2.)	Place your hands behind your head
+            3.)	Slowly curl your torso and bend your shoulders moving towards your thighs.
+            4.)	Hold this position for a moment, contradicting your abs and slowly return back to starting position.
+        </item>
+    </string-array>
+    <string-array name="exersice_details_tue_fri">
+        <item>
+            1.)	Grasp the pair of dumbbell and standing back straight up ,feet apart by dumbells should not be touching your body.
+            2.)	Your palms must face upwards.
+            3.)	Take up slack by bending elbows slightly
+            4.)	slowly curl the dumbbell as far as possible.
+            5.)	Squeeze the biceps hard,and slowly rest them at starting position.
+        </item>
+
+        <item>
+            1.)	Place an EZ bar on the rack of preacher bench and load it with appropriate weight.
+            2.)	Adjust the bench and seating’s height until the bench reaches a comfortable position  under  across chest and under armpits, while allowing full extension of upper arms and forearms.
+            3.)	Grasp bar with  both hands and connect biceps to bring the bar towards the face.
+            4.)	Once at full concentration , with a controlled motion reverse the bar’s direction and back until the biceps  are extended to complete the repetition.
+        </item>
+        <item>
+            1.)	Attach a straight bar to low pulley of a cable station ,then grab the handle with shoulder width , underhand grip  and hold it at arm’s length just infront of your thighs
+            2.)	Your knees must be bent slightly.
+            3.)	Curl the bar towards your chest as far as possible, without allowing your upper arm to move.
+        </item>
+        <item>
+            1.)	Sit on a bench and grab the dumbbell between the feet.
+            2.)	Place back of upper arm to inner thigh and lean on into leg to raise elbow  lightly.
+            3.)	Raise  dumbbell to front of shoulder.
+            4.)	Lower dumbbell until the arms is fully extended.
+            5.)	Also repeat it with opposite arm.
+        </item>
+        <item>
+            1.)	Lie on bench with your back , and dumbbell in hand on your stomach.
+            2.)	Lower dumbbell behind neck or shoulder while maintaining the vertical movement of upper dumbbell.
+            3.)	Extend your arm straight.
+            4.)	Return repeat with other arm too.
+        </item>
+        <item>
+            Take a few step back from a machine and then using an overhand grip space your hands on the back slightly less than shoulder with apart you can also perform this movement with one foot in front of the Other if it feels more comfortable lean forward and start with the bar touching your forehead with force Jiwan the way down to your waist by extending your elbows make sure to keep your elbows close to your sides at all time when you have logged your elbows out at the bottom squeeze your triceps and then return the bar back to the starting position by touching your forehead
+        </item>
+        <item>
+            Sit on a bench with back support in squat rack position and barbell at height that is just above your head grab the Bible with the palm facing forward once you pick up the barber with the correct grip with lift the bar up over your head by locking your arms old at about shoulder level and slightly in front of your head this is your starting position lower the bar down to the shoulder slowly as you inhale left the bar back up to the starting position as you inhale
+        </item>
+        <item>
+            Lie on the bench with a dumbbell in each hand and your feet flat on the floor you can rest your feet up on the bench if it's more comfortable the dumbbells up so that your arms are directly over your shoulder and your palms are up all your Adobe minerals in and tilt your chin towards your chest lower the dumbbells down and a little to the site until your elbows are slightly below your shoulders roll your shoulders blades back and down like you are picking them together accentuating your chest push the weight back up taking care not to lock your elbows or allow your shoulder blades 2 price of the bench
+        </item>
+        <item>
+            This can be done using two barrels the Shoulder Press machine is also used to perform this exercise
+            the 2 bars at the Shoulder Press machine is held about the shoulder push is given all the wait till arms are extended fully then bring down slowly about the shoulder
+        </item>
+        <item>
+            Stand with feet about shoulder width-apart, with arms flat at your side holding the dumbbells left both arms outward until they are parallel with your shoulders and then lower back down to resting position and repeat avoid bending your elbows as this causes strain on the joint
+        </item>
+        <item>
+            1.)	Grasp a  straight cable bar attached that is attached to low pulley of a cable station.
+            2.)	Grip it slightly less than shoulder width
+            3.)	The bar should be resting on the top of your thighs and your arms must be extended with slight bend at the elbows and your back must be straight.
+            4.)	Use your side shoulders to lift cable bar as you exhale.
+            5.)	Lower the bar back down slowly to the starting position and inhale as you perform.
+            6.)	Repeat the steps.
+        </item>
+        <item>
+            grasp a barbell with an Overhand grip that is slightly less than shoulder width the bar should be resting on the top of your thighs with your arm extended and a slightly bent in your elbows your back should also be straight this will be your starting position
+            Now exhale and use the sides of your shoulders to lift the bar-raising your elbows up and to the side keep the bar close to your body as your raise it continue to lift the bar until it nearly touches your chin
+            Lower the bar back down slowly to the starting position inhale as you perform this portion of the moment
+        </item>
+        <item>
+            1.)	Lie on floor with your face up, your knees bent and your feet on floor.
+            2.)	Place your hands behind your head
+            3.)	Slowly curl your torso and bend your shoulders moving towards your thighs.
+            4.)	Hold this position for a moment, contradicting your abs and slowly return back to starting position.
+        </item>
+    </string-array>
+    <string-array name="exersice_details_wed_sat">
+        <item>
+            Sit in the in the seat with your knees firmly under the pads and your feet placed flat on the ground. With your hands gripping the bar slightly wider than shoulder width, pull the bar down to your chest just below your collarbone. Make sue to keep your back straight and your shoulders pulled back throughout this motion.Resist the bar as it returns to the starting postion and repeat the action.
+        </item>
+        <item>
+            1. sit down on the machine and please your feet on the front platform or crossbar provided making sure that your knees are slightly bent and not locked.
+            2.lean over as you keep the natural alignment of your back and grab the V bar handles.
+            3. With your arms extended full back until your torso is at angle 90 degree angle from your legs your bag should be slightly arced and your chest should be sticking out you should be feeling a nice stress on your chest as you hold the bar in front of you this is the starting position of Excise keeping that also stationery pull the handle is back towards your torso while keeping the arms close to it until you touch the abdominals breathe out as you perform that moment at that point you should be squeezing your back muscle hard hold that concentration for a second and slowly go back to the original position while breathing in.
+        </item>
+        <item>
+            1.) Start off sitting down at a pull-down machine and place your knees underneath the padding on the machine.
+            2.) Grab onto the bar with a close overhand grip and pull the bar down straight until it is even with your upper chest.
+            3.) Once in the final position hold for a count while squeezing the lat muscles and then slowly return back to the starting position.
+        </item>
+        <item>
+            1.grab the bar grip it above shoulder width-apart full grip with your palms down.
+            2. Hang raise your feet of the Floor by bending your knees with straight arms.
+            3. pull yourself up by pulling your elbows down to the floor keep your elbows close.
+            4. pass the bar pull yourself all the way up until your chin passes the bar don't do half reps.
+            5. repeat lower yourself all the way down until your arms are straight pull up again
+        </item>
+        <item>
+            Lie back on a flat bench. Using a close grip (around shoulder width), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position.
+            As you breathe in, come down slowly until you feel the bar on your middle chest. Tip: Make sure that - as opposed to a regular bench press - you keep the elbows close to the torso at all times in order to maximize triceps involvement.
+            After a second pause, bring the bar back to the starting position as you breathe out and push the bar using your triceps muscles. Lock your arms in the contracted position, hold for a second and then start coming down slowly again. Tip: It should take at least twice as long to go down than to come up.
+            Repeat the movement for the prescribed amount of repetitions.
+            When you are done, place the bar back in the rack.
+        </item>
+        <item>
+            Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length.
+            Lower yourself until your chest almost touches the floor as you inhale.
+            Using your triceps and some of your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.
+            After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions.
+        </item>
+        <item>
+            Step into the rack and position the bar at ,back of shoulder, neck height , grasping the bar on the sides pushing elbows up maintained by its ability and comfort making sure to keep it just pulled up discount from the rack and position heels shoulder width apart facing 45 degrees out as you descend push you are nice out in line with your toes and allow your hips to bend out while keeping your chest and elbows desend to parralel or past for full range of motion and then push up through your Heels driving through your hips and keeping your chest up repeat
+        </item>
+        <item>
+            Step into the rack and position the bar at , neck height , grasping the bar on the sides pushing elbows up maintained by its ability and comfort making sure to keep it just pulled up discount from the rack and position heels shoulder width apart facing 45 degrees out as you descend push you are nice out in line with your toes and allow your hips to bend out while keeping your chest and elbows desend to parralel or past for full range of motion and then push up through your Heels driving through your hips and keeping your chest up repeat
+        </item>
+        <item>
+            Sit in a leg press machine with your toes on the bottom of the foot plate and your heels hanging off the bottom edge. Press the weight sled up with your feet until your knees straight. Press up with your toes and the balls of your feet, pushing the sled up a few inches. Feel your calf muscles contract, then lower your toes back down, getting a good stretch in the calfs
+        </item>
+        <item>
+            brace your abs push your hips back and bend your knees lowering the body into a squat with your hands remaining next to your side Pause the bottom and then push back up to the starting position
+        </item>
+        <item>
+            brace your abs push your hips back and bend your knees lowering the body into a squat with your hands remaining next to your side Pause the bottom and then push back up to the starting position
+        </item>
+        <item>
+        1.)	Lie on floor with your face up, your knees bent and your feet on floor.
+        2.)	Place your hands behind your head
+        3.)	Slowly curl your torso and bend your shoulders moving towards your thighs.
+        4.)	Hold this position for a moment, contradicting your abs and slowly return back to starting position.
+        </item>
+    </string-array>
+    <string-array name="exersice_details_abs">
+        <item>
+1.)	Lie on floor with your face up, your knees bent and your feet on floor.
+2.)	Place your hands behind your head
+3.)	Slowly curl your torso and bend your shoulders moving towards your thighs.
+4.)	Hold this position for a moment, contradicting your abs and slowly return back to starting position.
+
+</item>
+
+    </string-array>
+    <string-array name="exersice_details_back">
+        <item>
+            Sit in the in the seat with your knees firmly under the pads and your feet placed flat on the ground. With your hands gripping the bar slightly wider than shoulder width, pull the bar down to your chest just below your collarbone. Make sue to keep your back straight and your shoulders pulled back throughout this motion.Resist the bar as it returns to the starting postion and repeat the action.
+        </item>
+        <item>
+            1. sit down on the machine and please your feet on the front platform or crossbar provided making sure that your knees are slightly bent and not locked.
+            2.lean over as you keep the natural alignment of your back and grab the V bar handles.
+            3. With your arms extended full back until your torso is at angle 90 degree angle from your
+            legs your bag should be slightly arced and your chest should be sticking out you should be
+            feeling a nice stress on your chest as you hold the bar in front of you this is the starting
+            position of Excise keeping that also stationery pull the handle is back towards your torso
+            while keeping the arms close to it until you touch the abdominals breathe out as you perform
+            that moment at that point you should be squeezing your back muscle hard hold that concentration
+            for a second and slowly go back to the original position while breathing in.
+        </item>
+        <item>
+            Lie back on a flat bench. Using a close grip (around shoulder width), lift the bar from the rack and hold it straight over you with your arms locked. This will be your starting position.
+            As you breathe in, come down slowly until you feel the bar on your middle chest. Tip: Make sure that - as opposed to a regular bench press - you keep the elbows close to the torso at all times in order to maximize triceps involvement.
+            After a second pause, bring the bar back to the starting position as you breathe out and push the bar using your triceps muscles. Lock your arms in the contracted position, hold for a second and then start coming down slowly again. Tip: It should take at least twice as long to go down than to come up.
+            Repeat the movement for the prescribed amount of repetitions.
+            When you are done, place the bar back in the rack.
+        </item>
+        <item>
+            1.grab the bar grip it above shoulder width-apart full grip with your palms down.
+            2. Hang raise your feet of the Floor by bending your knees with straight arms.
+            3. pull yourself up by pulling your elbows down to the floor keep your elbows close.
+            4. pass the bar pull yourself all the way up until your chin passes the bar don't do half reps.
+            5. repeat lower yourself all the way down until your arms are straight pull up again
+        </item>
+        <item>
+            Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length.
+            Lower yourself until your chest almost touches the floor as you inhale.
+            Using your triceps and some of your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.
+            After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions.
+        </item>
+        <item>
+            Lie on the floor face down and place your hands closer than shoulder width for a close hand position. Make sure that you are holding your torso up at arms' length.
+            Lower yourself until your chest almost touches the floor as you inhale.
+            Using your triceps and some of your pectoral muscles, press your upper body back up to the starting position and squeeze your chest. Breathe out as you perform this step.
+            After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions.
+        </item>
+    </string-array>
+
+    <string-array name="exersice_details_legs">
+        <item>
+            Step into the rack and position the bar at ,back of shoulder, neck height , grasping the bar on the sides pushing elbows up maintained by its ability and comfort making sure to keep it just pulled up discount from the rack and position heels shoulder width apart facing 45 degrees out as you descend push you are nice out in line with your toes and allow your hips to bend out while keeping your chest and elbows desend to parralel or past for full range of motion and then push up through your Heels driving through your hips and keeping your chest up repeat
+        </item>
+        <item>
+            Step into the rack and position the bar at , neck height , grasping the bar on the sides pushing elbows up maintained by its ability and comfort making sure to keep it just pulled up discount from the rack and position heels shoulder width apart facing 45 degrees out as you descend push you are nice out in line with your toes and allow your hips to bend out while keeping your chest and elbows desend to parralel or past for full range of motion and then push up through your Heels driving through your hips and keeping your chest up repeat
+        </item>
+        <item>
+            Sit in a leg press machine with your toes on the bottom of the foot plate and your heels hanging off the bottom edge. Press the weight sled up with your feet until your knees straight. Press up with your toes and the balls of your feet, pushing the sled up a few inches. Feel your calf muscles contract, then lower your toes back down, getting a good stretch in the calfs
+        </item>
+        <item>
+            brace your abs push your hips back and bend your knees lowering the body into a squat with your hands remaining next to your side Pause the bottom and then push back up to the starting position
+        </item>
+        <item>
+            brace your abs push your hips back and bend your knees lowering the body into a squat with your hands remaining next to your side Pause the bottom and then push back up to the starting position
+        </item>
+    </string-array>
+    <string-array name="exersice_details_biceps">
+        <item>
+            1.)	Grasp the pair of dumbbell and standing back straight up ,feet apart by dumbells should not be touching your body.
+            2.)	Your palms must face upwards.
+            3.)	Take up slack by bending elbows slightly
+            4.)	slowly curl the dumbbell as far as possible.
+            5.)	Squeeze the biceps hard,and slowly rest them at starting position.
+        </item>
+        <item>
+            1.)	Place an EZ bar on the rack of preacher bench and load it with appropriate weight.
+            2.)	Adjust the bench and seating’s height until the bench reaches a comfortable position  under  across chest and under armpits, while allowing full extension of upper arms and forearms.
+            3.)	Grasp bar with  both hands and connect biceps to bring the bar towards the face.
+            4.)	Once at full concentration , with a controlled motion reverse the bar’s direction and back until the biceps  are extended to complete the repetition.
+        </item>
+        <item>
+            1.)	Attach a straight bar to low pulley of a cable station ,then grab the handle with shoulder width , underhand grip  and hold it at arm’s length just infront of your thighs
+            2.)	Your knees must be bent slightly.
+            3.)	Curl the bar towards your chest as far as possible, without allowing your upper arm to move.
+        </item>
+        <item>
+            1.)	Sit on a bench and grab the dumbbell between the feet.
+            2.)	Place back of upper arm to inner thigh and lean on into leg to raise elbow  lightly.
+            3.)	Raise  dumbbell to front of shoulder.
+            4.)	Lower dumbbell until the arms is fully extended.
+            5.)	Also repeat it with opposite arm.
+        </item>
+    </string-array>
+    <string-array name="exersice_details_shoulder">
+        <item>
+            Sit on a bench with back support in squat rack position and barbell at height that is just above your head grab the Bible with the palm facing forward once you pick up the barber with the correct grip with lift the bar up over your head by locking your arms old at about shoulder level and slightly in front of your head this is your starting position lower the bar down to the shoulder slowly as you inhale left the bar back up to the starting position as you inhale
+        </item>
+        <item>
+            Lie on the bench with a dumbbell in each hand and your feet flat on the floor you can rest your feet up on the bench if it's more comfortable the dumbbells up so that your arms are directly over your shoulder and your palms are up all your Adobe minerals in and tilt your chin towards your chest lower the dumbbells down and a little to the site until your elbows are slightly below your shoulders roll your shoulders blades back and down like you are picking them together accentuating your chest push the weight back up taking care not to lock your elbows or allow your shoulder blades 2 price of the bench
+        </item>
+        <item>
+            This can be done using two barrels the Shoulder Press machine is also used to perform this exercise
+            the 2 bars at the Shoulder Press machine is held about the shoulder push is given all the wait till arms are extended fully then bring down slowly about the shoulder
+        </item>
+        <item>
+            Stand with feet about shoulder width-apart, with arms flat at your side holding the dumbbells left both arms outward until they are parallel with your shoulders and then lower back down to resting position and repeat avoid bending your elbows as this causes strain on the joint
+        </item>
+        <item>
+            1.)	Grasp a  straight cable bar attached that is attached to low pulley of a cable station.
+            2.)	Grip it slightly less than shoulder width
+            3.)	The bar should be resting on the top of your thighs and your arms must be extended with slight bend at the elbows and your back must be straight.
+            4.)	Use your side shoulders to lift cable bar as you exhale.
+            5.)	Lower the bar back down slowly to the starting position and inhale as you perform.
+            6.)	Repeat the steps.
+        </item>
+        <item>
+            grasp a barbell with an Overhand grip that is slightly less than shoulder width the bar should be resting on the top of your thighs with your arm extended and a slightly bent in your elbows your back should also be straight this will be your starting position
+            Now exhale and use the sides of your shoulders to lift the bar-raising your elbows up and to the side keep the bar close to your body as your raise it continue to lift the bar until it nearly touches your chin
+            Lower the bar back down slowly to the starting position inhale as you perform this portion of the moment
+        </item>
+    </string-array>
+    <string-array name="exersice_details_chest">
+        <item>
+            Lie prone with your arms straight, your palms flat on the floor , and your hands shoulder-width apart (or wider). Hold your feet together or very slightly Spread inhale and bend your elbow to bring your torso near the floor, avoiding extreem hyperextention.
+        </item>
+        <item>
+            1)Grip a pullup bar with your palms facing towards each other. When you pull your self up with your hands
+            facing this way, you give your biceps and lats a Great workout. Pulling yourself up with your palms out is considered the most
+            dificult way to pull up your body weight Start with your arms almost fully extended.
+            <br/>
+            2.) Pull your body weight up until your chin is slightly above the bar.
+            <br/>
+            3.) Lower Yourself Until Your Arms are almost full extended.
+            <br/>
+            4.) Do unother pull up.
+        </item>
+        <item>To properly perform a bench press exercise you need to lay flat
+            on rent and have you your feet flat on floor the bar when erect
+            will be slightly behind your head it's important to use supporter for this
+            exercise especially if you are using a free bar or dumbbells eliminate the chance
+            of dropping the weight on yourself once you have lifted the weight of the Wreck the bar will
+            be directly over the centre of the chest keep your head on the bench at all the time to throughout
+            the moment once you have the bar study slowly it to about chess level if you are able to keep your
+            arm pointed out reaching the bottom bottom
+            of the moment price the bar backup and extended position for coaching position focusing on
+        </item>
+        <item>
+            1 Two dumbbells and Lion of flat bench face up extend your arm up with your palms facing Each Other bend your elbow slightly and keep them fixed throughout the exercise
+                <br/>2 keeping your arms perpendicular to your torso slowly lower the dumbbells in a semi-circular motion until your arms are in parallel with the floor.
+                <br/>3. Slowly raises the dumbbells along the same arc back to the starting point
+        </item>
+        <item>
+            Set at an angle between 20 and 40-degree wheat export to prevent them from slipping Ek and overhand grip on the bar with your hands at the shoulder with apart
+            <br/>1. In hell and slowly lower the bar until it reaches the lower edge of your pectorals.
+            <br/> 2. Press the bar back up, exhaling as you as you complete the movement.
+        </item>
+        <item>
+              To perform dumbbell flyes pick up a relatively lightweight in each hand you will need to experiment to determine how much weight is right for your dumbbell flyes to start with a lighter weight then slowly work your way up lie down on a weight bench and raise both dumbbells straight up over your chest with your arms
+              straight this is your starting position spread both arms out word in a wide arc until your arms are out at your side your arms can be slightly bent this is a part of dumbbell flyes it is called that because you look like you're flying follow the same are back up until the dumbbells return to the starting position this is one repetition of the dumbbell fly.
+        </item>
+        <item>
+                1.Keep your head down during the course of the moment and move your body forward 2.move your elbows out a bit that keeps your elbows out and away from your body this will ensure that you are using more chest than triceps remember really concentrate on squeezing your entire chest area at the top of the movement
+        </item>
+
+    </string-array>
+    <string-array name="exersice_details_triceps">
+        <item>
+                This is very similar to the bent arm barbell pullover except that you will be using a dumbbell instead of a barbell line flat on your back on a flat bench begin by holding the barbell above chest with your elbow slightly bent slowly lower the dumbbell back so as to stretch your arms (and the dumbbell) back behind your head as far as you can reach your arms and dumbbell will actually go behind above your head and will drop down below the belt this will really give you a great stretch return the dumbbell to the start position slowly focusing on keeping your elbows blocked in the slightly bent position
+        </item>
+        <item>
+            Take a few step back from a machine and then using an overhand grip space your hands on the back slightly less than shoulder with apart you can also perform this movement with one foot in front of the Other if it feels more comfortable lean forward and start with the bar touching your forehead with force Jiwan the way down to your waist by extending your elbows make sure to keep your elbows close to your sides at all time when you have logged your elbows out at the bottom squeeze your triceps and then return the bar back to the starting position by touching your forehead
+        </item>
+    </string-array>
+
+
+
+</resources>

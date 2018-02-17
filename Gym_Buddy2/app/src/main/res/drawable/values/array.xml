@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="exercise_name_mon_thu">
+        <item>Push Ups</item>
+        <item>Pull Ups</item>
+        <item>Flat Bench Press</item>
+        <item>Incline Dumbell Press</item>
+        <item>Decline Press</item>
+        <item>Incline Bench Dumbell Fly</item>
+        <item>Chest Dips</item>
+        <item>Dumbell Bent Arm Pullover</item>
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exercise_name_tue_fri">
+        <item>Dumbell Curls</item>
+        <item>Preacher Curls</item>
+        <item>Cable Curls</item>
+        <item>Concentration Curls</item>
+        <item>Triceps Extention Curls</item>
+        <item>Cable Triceps Extention</item>
+        <item>Militry Press</item>
+        <item>Dumbell Press</item>
+        <item>Seated Militry Press</item>
+        <item>Dumbell Lateral Raises</item>
+        <item>Cable Front Raises</item>
+        <item>Up Right Rows</item>
+        <item>Crunches</item>
+    </string-array>
+    <string-array name="exersice_name_wed_sat">
+        <item>Lat Pull Downs</item>
+        <item>Seated Cable rows</item>
+        <item>Close Grip Front Lat Pull Downs</item>
+        <item>Chin Ups</item>
+        <item>Close grip Bench Press</item>
+        <item>Narrow Grip Push Ups</item>
+        <item>Barell Squats</item>
+        <item>Front Barell Squats</item>
+        <item>calves leg Press</item>
+        <item>Sumo Squat</item>
+        <item>squats</item>
+        <item>Crunches</item>
+    </string-array>
+</resources>

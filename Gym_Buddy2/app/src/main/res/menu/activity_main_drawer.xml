@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/day_wise"
+            android:icon="@drawable/ic_view_week_black_24dp"
+            android:title="Day Wise" />
+        <item
+            android:id="@+id/b_part_wise"
+            android:icon="@drawable/ic_accessibility_black_24dp"
+            android:title="Body Part Wise" />
+        <item
+            android:id="@+id/diet_plans"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"
+            android:title="Diet Plans" />
+        <item
+            android:id="@+id/utilities"
+            android:icon="@drawable/ic_sentiment_satisfied_black_24dp"
+            android:title="Utilities" />
+        <item
+            android:id="@+id/competitions"
+            android:icon="@drawable/ic_fitness_center_black_24dp"
+            android:title="Competitions" />
+        <item
+            android:id="@+id/supplimens"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="Dietary Suppliments"/>
+
+
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Setting" />
+    </group>
+</menu>
