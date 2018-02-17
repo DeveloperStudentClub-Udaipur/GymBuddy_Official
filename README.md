@@ -12,19 +12,19 @@ It is basic Trainer App for people who want guidence towadrds physical fitness o
 ### Gym_Buddy2/Screenshots
 
 <p align="center">
-<img src="Gym_Buddy2/Gym_Buddy2/Screenshots/one.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/two.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/three.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/four.png" height = "400" width="200">
+<img src="Gym_Buddy2/Screenshots/one.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/two.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/three.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/four.png" height = "400" width="200" margin="10">
 </p>
 
 <p align="center">
-<img src="Gym_Buddy2/Screenshots/five.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/six.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/seven.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/eight.png" height = "400" width="200">
+<img src="Gym_Buddy2/Screenshots/five.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/six.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/seven.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/eight.png" height = "400" width="200" margin="10">
 </p>
 
 <p align="center">
-<img src="Gym_Buddy2/Screenshots/nine.png" height = "400" width="200"> <img src="Gym_Buddy2/Screenshots/ten.png" height = "400" width="200">
-    <img src="Gym_Buddy2/Screenshots/eleven.png" height = "400" width="200"><img src="Gym_Buddy2/Screenshots/twelve.png" height = "400" width="200">
+<img src="Gym_Buddy2/Screenshots/nine.png" height = "400" width="200" margin="10"> <img src="Gym_Buddy2/Screenshots/ten.png" height = "400" width="200" margin="10">
+    <img src="Gym_Buddy2/Screenshots/eleven.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/twelve.png" height = "400" width="200" margin="10">
 </p>
 <p align="center">
- <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200">   
+ <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200" margin="10">   
 </p>
 	
 ### TODO
