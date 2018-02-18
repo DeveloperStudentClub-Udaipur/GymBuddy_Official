@@ -24,21 +24,9 @@ It is basic Trainer App for people who want guidence towadrds physical fitness o
     <img src="Gym_Buddy2/Screenshots/eleven.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/twelve.png" height = "400" width="200" margin="10">
 </p>
 <p align="center">
- <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200" margin="10">   
+ <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/fifteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/sixsteen.png" height = "400" width="200" margin="10">   
+</p>
+<p align="center">
+    <img src="Gym_Buddy2/Screenshots/seventeen.png" height = "400" width="200" margin="10">
 </p>
 	
-### TODO
-- [ ] New features are welcome.
-
-## Release History
-
-* 0.0.1
-    * Work in progress
-
-
-## Meta
-
-Mohit Chug – chug.mohit7@gmail.com
-
-Distributed under the MIT LICENSE license. See [``LICENSE``](https://github.com/anandwana001/Tech-Jalsa/blob/master/LICENSE) for more information.
-
