@@ -24,9 +24,6 @@ It is basic Trainer App for people who want guidence towadrds physical fitness o
     <img src="Gym_Buddy2/Screenshots/eleven.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/twelve.png" height = "400" width="200" margin="10">
 </p>
 <p align="center">
- <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/fifteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/sixsteen.png" height = "400" width="200" margin="10">   
-</p>
-<p align="center">
-    <img src="Gym_Buddy2/Screenshots/seventeen.png" height = "400" width="200" margin="10">
+ <img src="Gym_Buddy2/Screenshots/therteen.png" height = "400" width="200" margin="10"><img src="Gym_Buddy2/Screenshots/forteen.png" height = "400" width="200" margin="10">
 </p>
 	
