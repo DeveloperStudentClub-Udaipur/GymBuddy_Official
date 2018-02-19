@@ -44,5 +44,16 @@
         android:layout_margin="5dp"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Here to Test Notification"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:id="@+id/click"
+        android:textAlignment="center"
+        android:textColor="@color/White"/>
 
 </LinearLayout>

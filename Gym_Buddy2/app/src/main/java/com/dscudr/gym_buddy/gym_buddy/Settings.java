@@ -6,11 +6,16 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -29,6 +34,7 @@ public class Settings extends Fragment {
     }
     SharedPreferences sharedPreferences;
     Switch switch_1;
+    Button click;
     AlarmManager alarmManager;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,6 +44,24 @@ public class Settings extends Fragment {
         sharedPreferences = this.getActivity().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
         int ch = sharedPreferences.getInt("Notification",0);
         switch_1 = (Switch)view.findViewById(R.id.sw_setting);
+        click = (Button)view.findViewById(R.id.click);
+        click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
+                NotificationCompat.Builder noti = new NotificationCompat.Builder(getContext());
+                noti.setContentText("It's Time to Get Hidrated");
+                noti.setContentTitle("Drink Water");
+                noti.setSound(sound);
+                noti.setSmallIcon(R.mipmap.ic_launcher);
+                noti.setAutoCancel(true);
+                Intent i = new Intent(getContext(), MainActivity.class);
+                PendingIntent pd = PendingIntent.getActivity(getContext(), 1, i, 0);
+                noti.setContentIntent(pd);
+                managerCompat.notify(1, noti.build());
+            }
+        });
         final AlarmManager alarmManager = (AlarmManager)getActivity().getSystemService(Context.ALARM_SERVICE);
 
         if(ch==1)

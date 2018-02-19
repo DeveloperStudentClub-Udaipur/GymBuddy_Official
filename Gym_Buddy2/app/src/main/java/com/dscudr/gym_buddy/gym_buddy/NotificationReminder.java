@@ -20,7 +20,7 @@ public class NotificationReminder extends BroadcastReceiver {
         noti.setContentText("It's Time to Get Hidrated");
         noti.setContentTitle("Drink Water");
         noti.setSound(sound);
-        noti.setSmallIcon(R.drawable.water_cal);
+        noti.setSmallIcon(R.mipmap.ic_launcher);
         Intent i = new Intent(context, MainActivity.class);
         PendingIntent pd = PendingIntent.getActivity(context, 1, i, 0);
         noti.setContentIntent(pd);
