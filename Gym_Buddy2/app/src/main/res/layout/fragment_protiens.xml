@@ -14,6 +14,7 @@
             android:text="Whey Protien"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
+            android:fontFamily="@font/amiko"
             android:textAlignment="center"
             />
         <TextView
@@ -21,6 +22,7 @@
             android:layout_height="wrap_content"
             android:text="romoe lean muscle growth and fat lose , Cardiovascular health."
             android:layout_margin="10dp"
+            android:fontFamily="@font/amiko"
             android:textSize="16sp"
             android:textColor="@color/Black"
             />
@@ -28,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Casien Protien"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textAlignment="center"
@@ -36,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
             android:layout_height="wrap_content"
             android:text="Formed from eperation of milk with a acidic solution helps in fat gain"
@@ -44,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Egg Protien"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:textAlignment="center"
@@ -53,6 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textSize="16sp"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
             android:text="Obtained after dehydration of egg whites Exclusive source of vitamins and minrals"
             />

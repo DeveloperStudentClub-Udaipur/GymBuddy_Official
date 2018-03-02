@@ -4,13 +4,12 @@ package com.dscudr.gym_buddy.gym_buddy;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.app.FragmentManager;
 
 import com.dscudr.gym_buddy.gym_buddy.DayFragments.FridayFragmentClass;
 import com.dscudr.gym_buddy.gym_buddy.DayFragments.MondayFragmentClass;
@@ -18,12 +17,10 @@ import com.dscudr.gym_buddy.gym_buddy.DayFragments.SaturdayFragmentClass;
 import com.dscudr.gym_buddy.gym_buddy.DayFragments.ThursdayFragmentClass;
 import com.dscudr.gym_buddy.gym_buddy.DayFragments.TuesdayFragmentClass;
 import com.dscudr.gym_buddy.gym_buddy.DayFragments.WednesdayFragmentClass;
-import ss.com.bannerslider.views.BannerSlider;
-import java.util.ArrayList;
-import java.util.List;
-import ss.com.bannerslider.banners.Banner;
-import ss.com.bannerslider.banners.RemoteBanner;
-import ss.com.bannerslider.banners.DrawableBanner;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
@@ -32,34 +29,44 @@ import ss.com.bannerslider.banners.DrawableBanner;
 public class DayWise extends Fragment {
 
     View view;
+    @BindView(R.id.tabLayout)
+    TabLayout tabLayout;
+    @BindView(R.id.mypager)
+    ViewPager mypager;
+    Unbinder unbinder;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_day_wise, container, false);
+        unbinder = ButterKnife.bind(this, view);
 
-        TabLayout tab = (TabLayout)view.findViewById(R.id.tabLayout);
-        final ViewPager mypage = (ViewPager)view.findViewById(R.id.mypager);
-        mypage.setAdapter(new pagerAdapter(getChildFragmentManager()));
+        mypager.setAdapter(new pagerAdapter(getChildFragmentManager()));
 
-        tab.setupWithViewPager(mypage);
-        tab.setTabMode(TabLayout.MODE_SCROLLABLE);
-        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener()
+        tabLayout.setupWithViewPager(mypager);
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        if(getResources().getBoolean(R.bool.ori))
         {
+            tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        }
+        else
+        {
+            tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        }
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab)
-            {
-                mypage.setCurrentItem(tab.getPosition());
+            public void onTabSelected(TabLayout.Tab tab) {
+                mypager.setCurrentItem(tab.getPosition());
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab)
-            {
+            public void onTabUnselected(TabLayout.Tab tab) {
 
             }
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab)
-            {
+            public void onTabReselected(TabLayout.Tab tab) {
 
             }
         });
@@ -67,18 +74,23 @@ public class DayWise extends Fragment {
         return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
 }
+
 class pagerAdapter extends FragmentPagerAdapter {
 
-    String data[] ={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"};
+    String data[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     public pagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
-    public Fragment getItem(int position)
-    {
+    public Fragment getItem(int position) {
         if (position == 0) {
             return new MondayFragmentClass();
         }
@@ -101,15 +113,13 @@ class pagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getCount()
-    {
+    public int getCount() {
         return data.length;
     }
 
 
     @Override
-    public CharSequence getPageTitle(int position)
-    {
+    public CharSequence getPageTitle(int position) {
         return data[position];
     }
 

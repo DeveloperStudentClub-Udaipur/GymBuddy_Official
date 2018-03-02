@@ -16,7 +16,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/chango"
+            android:fontFamily="@font/amiko"
+            android:textStyle="bold"
             android:text="Weight Lifting"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
@@ -48,14 +49,19 @@
             android:layout_margin="20dp"
             />
     </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"></View>
 
-     <TextView
+        <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Weight Class :"
         android:fontFamily="@font/amiko"
         android:textStyle="bold"
          android:layout_marginLeft="10dp"
+         android:layout_marginTop="20dp"
         android:textColor="@color/Black"
         android:textSize="20dp"
         />
@@ -68,19 +74,55 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="12sp"
-                android:id="@+id/man_weight"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Men's weight classes:"
                 android:layout_weight="1"
+                android:textAlignment="center"
                 android:layout_margin="10dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Women's weight classes:"
+                android:layout_margin="10dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
                 android:textSize="12sp"
-                android:layout_margin="10dp"
+                android:id="@+id/man_weight"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:layout_margin="20dp"
                 android:id="@+id/women_weight"
                 />
         </LinearLayout>

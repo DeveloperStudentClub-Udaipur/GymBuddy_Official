@@ -55,6 +55,7 @@
             android:layout_marginEnd="51dp"
             android:layout_marginRight="51dp"
             android:text=""
+            android:fontFamily="@font/amiko"
             android:textSize="30sp" />
 
         <LinearLayout
@@ -78,6 +79,7 @@
                 android:text="Underweight &#60; 18.5"
                 android:textSize="12sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/amiko"
                 android:textColor="@color/light_yellow"
                 />
 
@@ -85,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:fontFamily="@font/amiko"
                 android:text="18.5 &#60; Normal &#60; 24.5"
                 android:textSize="12sp"
                 android:textColor="@color/light_green"
@@ -95,6 +98,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:fontFamily="@font/amiko"
                 android:text="24.5 &#60; Overweight &#60; 30"
                 android:textSize="12sp"
                 android:textColor="@color/light_red"
@@ -106,6 +110,7 @@
                 android:layout_margin="5dp"
                 android:text="Obse &#62; 30"
                 android:textSize="12sp"
+                android:fontFamily="@font/amiko"
                 android:textColor="@color/light_orange"
                 android:textStyle="bold"/>
 
@@ -130,6 +135,7 @@
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/amiko"
             android:layout_height="wrap_content"
             android:layout_marginBottom="11dp"
             android:text="Weight"
@@ -143,6 +149,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Height"
+            android:fontFamily="@font/amiko"
             android:layout_marginBottom="11dp"
 
             android:textAlignment="center"
@@ -167,6 +174,7 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="Kg"
+                android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@color/Black" />
 
@@ -181,6 +189,7 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="lbs"
+                android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
         </LinearLayout>
@@ -196,6 +205,7 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="Cm"
+                android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
 
@@ -208,6 +218,7 @@
                 android:layout_width="30dp"
                 android:layout_height="wrap_content"
                 android:text="Feet"
+                android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 />
@@ -222,6 +233,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:hint="Weight in Kgs"
+            android:fontFamily="@font/amiko"
             android:inputType="numberDecimal"
             android:textAlignment="center"
             android:textSize="14sp"
@@ -236,6 +248,7 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:hint="Cm"
+                android:fontFamily="@font/amiko"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textSize="14sp"
@@ -246,6 +259,7 @@
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
                 android:hint="Inch"
+                android:fontFamily="@font/amiko"
                 android:inputType="number"
                 android:textAlignment="center"
                 android:textSize="14sp"
@@ -262,6 +276,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:fontFamily="@font/amiko"
         android:layout_below="@+id/linearLayout3"
         android:background="@color/blue_success"
         android:layout_marginLeft="12dp"

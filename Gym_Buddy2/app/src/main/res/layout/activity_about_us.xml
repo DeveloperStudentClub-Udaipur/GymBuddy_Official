@@ -67,6 +67,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:text="@string/abt_dsc"
+                android:fontFamily="@font/amiko"
                 android:textColor="@color/Black"
                 android:textSize="@dimen/heading_big"
                 android:textStyle="bold" />
@@ -81,6 +82,7 @@
                 android:layout_marginTop="22dp"
                 android:text="@string/about"
                 android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
                 android:textSize="@dimen/para_con"
                 android:layout_margin="15dp"
                 />
@@ -93,6 +95,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="@string/sdcl"
                 android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
                 android:textSize="@dimen/heading_small"
                 android:textStyle="bold" />
 
@@ -105,7 +108,7 @@
                 android:text="Akshay Nandwana"
                 android:textColor="@color/Black"
                 android:textSize="@dimen/developer_name"
-                android:fontFamily="sans-serif"
+                android:fontFamily="@font/amiko"
                 android:layout_margin="10dp"
 
                 />
@@ -117,6 +120,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="Application Developed By :-"
                 android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
                 android:textSize="@dimen/heading_small"
                 android:textStyle="bold"
                 />
@@ -130,7 +134,7 @@
                 android:textColor="@color/Black"
                 android:textSize="@dimen/developer_name"
                 android:layout_margin="10dp"
-                android:fontFamily="sans-serif"
+                android:fontFamily="@font/amiko"
                 />
 
             <TextView
@@ -140,6 +144,7 @@
                 android:layout_below="@+id/textView8"
                 android:layout_centerHorizontal="true"
                 android:text="@string/contact"
+                android:fontFamily="@font/amiko"
                 android:textColor="@color/Black"
                 android:textSize="@dimen/heading_big"
                 android:textStyle="bold"
@@ -147,24 +152,27 @@
                 />
 
             <ImageButton
-                android:id="@+id/imageView1"
+                android:id="@+id/facebook"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/textView9"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="11dp"
-                android:src="@drawable/fb" />
+                android:src="@drawable/fb"
+                android:scaleType="fitCenter"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView10"
+                android:id="@+id/Phone"
                 android:layout_centerHorizontal="true"
                 android:text="@string/phone"
                 android:textColor="@color/Black"
+                android:fontFamily="@font/amiko"
                 android:textSize="@dimen/heading_big"
                 android:layout_margin="10dp"
-                android:layout_below="@id/imageView1" />
+                android:layout_below="@id/facebook" />
 
 
 

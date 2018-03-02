@@ -39,6 +39,7 @@
                 android:layout_below="@id/exe_img"
                 android:id="@+id/exe_name"
                 android:padding="5dp"
+                android:fontFamily="@font/amiko"
                 android:textColor="@color/White"
                 android:textStyle="bold"
                 android:textAlignment="center"

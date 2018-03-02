@@ -7,24 +7,25 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.FridayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.MondayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.SaturdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.ThursdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.TuesdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.WednesdayFragmentClass;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class Competitions extends Fragment {
+
+    @BindView(R.id.tabLayout)
+    TabLayout tabLayout;
+    @BindView(R.id.mypager)
+    ViewPager mypager;
+    Unbinder unbinder;
 
     public Competitions() {
         // Required empty public constructor
@@ -35,30 +36,27 @@ public class Competitions extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
         View view = inflater.inflate(R.layout.fragment_compititions, container, false);
-        TabLayout tab = (TabLayout)view.findViewById(R.id.tabLayout);
-        final ViewPager mypage = (ViewPager)view.findViewById(R.id.mypager);
-        mypage.setAdapter(new competitionsAdapter(getChildFragmentManager()));
+        unbinder = ButterKnife.bind(this, view);
 
-        tab.setupWithViewPager(mypage);
-        tab.setTabMode(TabLayout.MODE_SCROLLABLE);
-        tab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener()
-        {
+        mypager.setAdapter(new competitionsAdapter(getChildFragmentManager()));
+
+        tabLayout.setupWithViewPager(mypager);
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onTabSelected(TabLayout.Tab tab)
-            {
-                mypage.setCurrentItem(tab.getPosition());
+            public void onTabSelected(TabLayout.Tab tab) {
+                mypager.setCurrentItem(tab.getPosition());
             }
 
             @Override
-            public void onTabUnselected(TabLayout.Tab tab)
-            {
+            public void onTabUnselected(TabLayout.Tab tab) {
 
             }
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab)
-            {
+            public void onTabReselected(TabLayout.Tab tab) {
 
             }
         });
@@ -66,18 +64,23 @@ public class Competitions extends Fragment {
         return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
 }
+
 class competitionsAdapter extends FragmentPagerAdapter {
 
-    String data[] ={"Body Building","Physique","Weight Lifting","Power Lifting"};
+    String data[] = {"Body Building", "Physique", "Weight Lifting", "Power Lifting"};
 
     public competitionsAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
-    public Fragment getItem(int position)
-    {
+    public Fragment getItem(int position) {
         if (position == 0) {
             return new BodyBuilding();
         }
@@ -94,15 +97,13 @@ class competitionsAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getCount()
-    {
+    public int getCount() {
         return data.length;
     }
 
 
     @Override
-    public CharSequence getPageTitle(int position)
-    {
+    public CharSequence getPageTitle(int position) {
         return data[position];
     }
 

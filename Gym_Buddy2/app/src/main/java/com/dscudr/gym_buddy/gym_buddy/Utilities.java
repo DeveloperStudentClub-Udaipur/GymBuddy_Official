@@ -9,6 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,36 +21,43 @@ import android.widget.LinearLayout;
 public class Utilities extends Fragment {
 
 
-    public Utilities()
-    {
+    @BindView(R.id.water_calculator)
+    LinearLayout waterCalculator;
+    @BindView(R.id.bmi_calculator)
+    LinearLayout bmiCalculator;
+    Unbinder unbinder;
+
+    public Utilities() {
         // Required empty public constructor
     }
 
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
-    {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_utilities, container, false);
-        LinearLayout linearLayout_water = (LinearLayout)view.findViewById(R.id.water_calculator);
-        LinearLayout linearLayout_BMI = (LinearLayout)view.findViewById(R.id.bmi_calculator);
-        linearLayout_water.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(),WaterCalculator.class);
-                startActivity(i);
-            }
-        });
-        linearLayout_BMI.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getContext(),BmiCalculator.class);
-                startActivity(i);
-            }
-        });
 
+        unbinder = ButterKnife.bind(this, view);
         return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
+
+    @OnClick({R.id.water_calculator, R.id.bmi_calculator})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.water_calculator:
+                Intent i = new Intent(getContext(), WaterCalculator.class);
+                startActivity(i);
+                break;
+            case R.id.bmi_calculator:
+                Intent i1 = new Intent(getContext(), BmiCalculator.class);
+                startActivity(i1);
+                break;
+        }
+    }
 }

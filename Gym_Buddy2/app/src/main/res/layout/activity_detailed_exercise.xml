@@ -37,16 +37,6 @@
         android:layout_height="300dp"
         android:orientation="vertical"
         android:background="@color/light_grey">
-        <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_margin="5dp"
-            android:fontFamily="@font/amiko"
-            />
 
             <TextView
                 android:layout_width="match_parent"
@@ -245,7 +235,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="set-4 : 8 Rep. "
+                        android:text="set-4 : 08 Rep. "
                         android:textSize="12sp"
                         android:layout_gravity="center"
                         android:textColor="@color/Black"

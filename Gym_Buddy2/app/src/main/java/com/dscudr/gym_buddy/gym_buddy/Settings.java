@@ -18,9 +18,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
-
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
@@ -29,22 +32,26 @@ import android.widget.Toast;
 public class Settings extends Fragment {
 
 
+    @BindView(R.id.sw_setting)
+    Switch swSetting;
+    @BindView(R.id.click)
+    TextView click;
+    Unbinder unbinder;
+
     public Settings() {
         // Required empty public constructor
     }
+
     SharedPreferences sharedPreferences;
-    Switch switch_1;
-    Button click;
     AlarmManager alarmManager;
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
+        unbinder = ButterKnife.bind(this, view);
         sharedPreferences = this.getActivity().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
-        int ch = sharedPreferences.getInt("Notification",0);
-        switch_1 = (Switch)view.findViewById(R.id.sw_setting);
-        click = (Button)view.findViewById(R.id.click);
+        int ch = sharedPreferences.getInt("Notification", 0);
         click.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,52 +69,71 @@ public class Settings extends Fragment {
                 managerCompat.notify(1, noti.build());
             }
         });
-        final AlarmManager alarmManager = (AlarmManager)getActivity().getSystemService(Context.ALARM_SERVICE);
+        final AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 
-        if(ch==1)
-        {
-            switch_1.setChecked(true);
+        if (ch == 1) {
+            swSetting.setChecked(true);
+        } else {
+            swSetting.setChecked(false);
+
         }
-        else
-        {
-            switch_1.setChecked(false);
-        }
-        switch_1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        swSetting.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
-            {
-                if(isChecked==true)
-                {
-                    Toast.makeText(getContext(),"function called gymbuddy",Toast.LENGTH_SHORT).show();
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked == true) {
+                    Toast.makeText(getContext(), "function called gymbuddy", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent();
                     intent.setAction("com.dscudpr.gymbuddy");
                     intent.addCategory("android.intent.category.DEFAULT");
-                    PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
-                    alarmManager.setRepeating(alarmManager.RTC_WAKEUP,System.currentTimeMillis(),1000 * 3600,pendingIntent);
-                    Toast.makeText(getContext(),"Alarm set ",Toast.LENGTH_SHORT).show();
-                    SharedPreferences sharedPreferences = getContext().getSharedPreferences("reminder_settings",Context.MODE_PRIVATE);
+                    PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
+                    alarmManager.setRepeating(alarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000 * 3600, pendingIntent);
+                    Toast.makeText(getContext(), "Alarm set ", Toast.LENGTH_SHORT).show();
+                    SharedPreferences sharedPreferences = getContext().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putInt("Notification",1);
+                    editor.putInt("Notification", 1);
                     editor.commit();
-                }
-                else
-                {
+                } else {
                     Intent intent = new Intent();
                     intent.setAction("com.dscudpr.gymbuddy");
                     intent.addCategory("android.intent.category.DEFAULT");
-                    PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
+                    PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
                     alarmManager.cancel(pendingIntent);
-                    Toast.makeText(getContext(),"Alarm unset gymbuddy",Toast.LENGTH_SHORT).show();
-                    SharedPreferences sharedPreferences = getActivity().getSharedPreferences("reminder_settings",Context.MODE_PRIVATE);
+                    Toast.makeText(getContext(), "Alarm unset gymbuddy", Toast.LENGTH_SHORT).show();
+                    SharedPreferences sharedPreferences = getActivity().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-                    editor.putInt("Notification",0);
+                    editor.putInt("Notification", 0);
                     editor.commit();
                 }
             }
         });
+        click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
+                NotificationCompat.Builder noti = new NotificationCompat.Builder(getContext());
+                noti.setContentText("It's Time to Get Hidrated");
+                noti.setContentTitle("Drink Water");
+                noti.setSound(sound);
+                noti.setSmallIcon(R.mipmap.ic_launcher);
+                Intent i = new Intent(getContext(), MainActivity.class);
+                PendingIntent pd = PendingIntent.getActivity(getContext(), 1, i, 0);
+                noti.setContentIntent(pd);
+                noti.setAutoCancel(true);
+                managerCompat.notify(1, noti.build());
+
+            }
+        });
+
+
 
         return view;
 
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
 }
