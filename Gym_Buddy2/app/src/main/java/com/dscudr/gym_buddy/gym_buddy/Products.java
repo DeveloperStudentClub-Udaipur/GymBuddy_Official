@@ -4,11 +4,14 @@ package com.dscudr.gym_buddy.gym_buddy;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 
 /**
@@ -16,13 +19,14 @@ import android.view.ViewGroup;
  */
 public class Products extends Fragment {
 
-    String name[] = {"Whey Protien"};
-    int img[] = {R.drawable.whey_box};
-    int price[] = {134};
+    String name[];
+    int img[] = {R.drawable.mt_01,R.drawable.mt_02,R.drawable.mt_03,R.drawable.mt_04,R.drawable.on_01,R.drawable.on_02,R.drawable.on_03,R.drawable.on_04,R.drawable.dm_01,R.drawable.dm_02,R.drawable.dm_03,R.drawable.dm_04,R.drawable.bm_01,R.drawable.bm_02,R.drawable.bm_03,R.drawable.bm_04,R.drawable.un_01,R.drawable.un_02,R.drawable.un_03,R.drawable.un_04};
     AdapterProduct adapterProduct;
-    RecyclerView recyclerView;
-    public Products()
-    {
+    @BindView(R.id.recycle_product)
+    RecyclerView recycleProduct;
+    Unbinder unbinder;
+
+    public Products() {
 
     }
 
@@ -32,11 +36,28 @@ public class Products extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_products, container, false);
-        adapterProduct = new AdapterProduct(getActivity(),img,name,price);
-        recyclerView = (RecyclerView)view.findViewById(R.id.recycle_product);
-        recyclerView.setAdapter(adapterProduct);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
-        return  view;
+        unbinder = ButterKnife.bind(this, view);
+        name = getResources().getStringArray(R.array.protien_name);
+        adapterProduct = new AdapterProduct(getActivity(), img, name);
+        recycleProduct = (RecyclerView) view.findViewById(R.id.recycle_product);
+        recycleProduct.setAdapter(adapterProduct);
+        int col=4;
+        if(getResources().getBoolean(R.bool.ori))
+        {
+            col = 2;
+        }
+        else
+        {
+            col=4;
+        }
+
+        recycleProduct.setLayoutManager(new GridLayoutManager(getActivity(), col));
+        return view;
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unbinder.unbind();
+    }
 }

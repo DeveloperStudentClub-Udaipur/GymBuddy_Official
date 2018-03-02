@@ -13,13 +13,15 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
 }
 
-dependencies {
+dependencies
+    {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.0-beta1'
     implementation 'com.android.support:design:26.0.0-beta1'
@@ -29,7 +31,8 @@ dependencies {
     implementation 'com.jackandphantom.android:circularprogressbar:1.2.0'
     implementation 'com.android.support.test.espresso:espresso-core:3.0.2-alpha1'
     implementation 'com.android.support:cardview-v7:26.0.0-beta1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
-    implementation 'com.jakewharton:butterknife:7.0.1'
-    implementation 'com.ss.bannerslider:bannerslider:1.8.0'
-}
+
+    }

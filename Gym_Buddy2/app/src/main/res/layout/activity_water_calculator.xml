@@ -30,6 +30,7 @@
         android:layout_below="@id/appbar"
         android:text="@string/inform"
         android:textSize="@dimen/text_heading_med"
+        android:fontFamily="@font/amiko"
         android:layout_margin="@dimen/margin_big"
         android:textColor="@color/Black"
         />
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/hint"
         android:text="@string/enter_weight"
+        android:fontFamily="@font/amiko"
         android:layout_below="@+id/info"
         android:textAlignment="center"
         android:textColor="@color/Black"
@@ -62,6 +64,7 @@
         android:layout_below="@+id/input_weight"
         android:layout_margin="@dimen/margin_big"
         android:text="Calculate"
+        android:fontFamily="@font/amiko"
         android:backgroundTint="@color/blue_success"
         android:backgroundTintMode="src_in"
         />
@@ -69,8 +72,7 @@
     <TextView
         android:id="@+id/result"
         android:layout_width="200dp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/amiko"
         android:layout_height="wrap_content"
         android:layout_below="@+id/calculate"
         android:layout_centerHorizontal="true"
@@ -109,6 +111,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="42dp"
             android:layout_marginStart="42dp"
+            android:fontFamily="@font/amiko"
             android:text="Reminder Notification"
             android:textColor="@color/Black" />
 

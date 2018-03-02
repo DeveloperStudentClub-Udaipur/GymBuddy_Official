@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,22 +15,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.MondayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.TuesdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.WednesdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.ThursdayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.FridayFragmentClass;
-import com.dscudr.gym_buddy.gym_buddy.DayFragments.SaturdayFragmentClass;
-import android.support.v4.app.FragmentManager;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private NavigationView navigationView;
-    private DrawerLayout drawer;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    @BindView(R.id.frame)
+    RelativeLayout frame;
+    @BindView(R.id.nav_view)
+    NavigationView navView;
+    @BindView(R.id.drawer_layout)
+    DrawerLayout drawerLayout;
+
     private View navHeader;
     private ImageView imgProfile;
-    private Toolbar toolbar;
     public static int navItemIndex = 0;
 
     // tags used to attach the fragments
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG_UTILITEIS = "Utilities";
     private static final String TAG_COMPETITIONS = "Competitions";
     private static final String TAG_SUPPIMENTS = "Dietary Supplements";
-    private static final String TAG_SETTING= "Setting";
+    private static final String TAG_SETTING = "Setting";
 
 
     public static String CURRENT_TAG = TAG_DAY_WISE;
@@ -58,16 +59,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
 
         // Navigation view header
-        navHeader = navigationView.getHeaderView(0);
+        navHeader = navView.getHeaderView(0);
 
 
         // load toolbar titles from string resources
@@ -87,8 +86,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void loadNavHeader()
-    {
+    private void loadNavHeader() {
 
     }
 
@@ -106,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         // if user select the current navigation menu again, don't do anything
         // just close the navigation drawer
         if (getSupportFragmentManager().findFragmentByTag(CURRENT_TAG) != null) {
-            drawer.closeDrawers();
+            drawerLayout.closeDrawers();
 
             return;
         }
@@ -134,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //Closing drawer on item click
-        drawer.closeDrawers();
+        drawerLayout.closeDrawers();
 
         // refresh toolbar menu
         invalidateOptionsMenu();
@@ -144,19 +142,19 @@ public class MainActivity extends AppCompatActivity {
         switch (navItemIndex) {
             case 0:
                 // daywisefragment
-                DayWise daywisefragment= new DayWise();
+                DayWise daywisefragment = new DayWise();
                 return daywisefragment;
             case 1:
                 // bodypartwise
                 BodyPartWise bodyPartWiseFragment = new BodyPartWise();
-                return bodyPartWiseFragment ;
+                return bodyPartWiseFragment;
             case 2:
                 // movies fragment
-                 DietPlans dietPlans= new DietPlans();
+                DietPlans dietPlans = new DietPlans();
                 return dietPlans;
             case 3:
                 // utilitiesfragment
-                Utilities utilitiesfragment= new Utilities();
+                Utilities utilitiesfragment = new Utilities();
                 return utilitiesfragment;
             case 4:
                 // utilitiesfragment
@@ -164,11 +162,11 @@ public class MainActivity extends AppCompatActivity {
                 return competitions;
             case 5:
                 // utilitiesfragment
-                Suppliments suppliments= new Suppliments();
+                Suppliments suppliments = new Suppliments();
                 return suppliments;
             case 6:
                 // utilitiesfragment
-                Settings setting= new Settings();
+                Settings setting = new Settings();
                 return setting;
             default:
                 return new BodyPartWise();
@@ -180,12 +178,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void selectNavMenu() {
-        navigationView.getMenu().getItem(navItemIndex).setChecked(true);
+        navView.getMenu().getItem(navItemIndex).setChecked(true);
     }
 
     private void setUpNavigationView() {
         //Setting Navigation View Item Selected Listener to handle the item click of the navigation menu
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
             // This method will trigger on item Click of navigation menu
             @Override
@@ -241,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.openDrawer, R.string.closeDrawer) {
+        ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.openDrawer, R.string.closeDrawer) {
 
             @Override
             public void onDrawerClosed(View drawerView) {
@@ -257,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         //Setting the actionbarToggle to drawer layout
-        drawer.setDrawerListener(actionBarDrawerToggle);
+        drawerLayout.setDrawerListener(actionBarDrawerToggle);
 
         //calling sync state is necessary or else your hamburger icon wont show up
         actionBarDrawerToggle.syncState();
@@ -265,8 +263,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawers();
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawers();
             return;
         }
 
@@ -291,10 +289,11 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
 
         // show menu only when home fragment is selected
-        if (navItemIndex == 0)
-        {
+        if (navItemIndex == 0) {
             getMenuInflater().inflate(R.menu.main, menu);
         }
+
+
 
         // when fragment is notifications, load the menu created for notifications
         return true;
@@ -309,16 +308,16 @@ public class MainActivity extends AppCompatActivity {
 
         //about us
         if (id == R.id.action_aboutus) {
-            Intent i =new Intent(MainActivity.this,AboutUs.class);
+            Intent i = new Intent(MainActivity.this, AboutUs.class);
             startActivity(i);
             return true;
         }
 
         if (id == R.id.action_Share) {
             Intent in = new Intent(Intent.ACTION_SEND);
-                in.setType("plain/text");
-                in.putExtra(Intent.EXTRA_TEXT, "Hey ! there I am Using A Great App fOR Gyming You Would Try Here is the link -> goo.gl/UBQLcs");
-                startActivity(Intent.createChooser(in,"SHARE APP"));
+            in.setType("plain/text");
+            in.putExtra(Intent.EXTRA_TEXT, "Hey ! there I am Using A Great App fOR Gyming You Would Try Here is the link -> goo.gl/UBQLcs");
+            startActivity(Intent.createChooser(in, "SHARE APP"));
 
             return true;
 

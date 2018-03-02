@@ -27,7 +27,7 @@
             android:layout_marginTop="30dp"
             android:textSize="20sp"
             android:text="Water Calculator"
-            android:textStyle="bold"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/Black"/>
     </LinearLayout>
     <LinearLayout
@@ -50,8 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:textSize="20sp"
+            android:fontFamily="@font/amiko"
             android:text="BMI Calculator"
-            android:textStyle="bold"
             android:textColor="@color/Black"/>
     </LinearLayout>
     </LinearLayout>

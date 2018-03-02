@@ -10,8 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Notifications"
-        android:textStyle="bold"
+
         android:textSize="25sp"
+        android:fontFamily="@font/amiko"
         android:textColor="#FF0000"
         android:layout_margin="10dp"/>
     <LinearLayout
@@ -23,8 +24,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Water Reminder Notificatios"
-            android:textStyle="bold"
             android:textSize="20sp"
+            android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
             android:layout_weight="1"
             />
@@ -39,21 +40,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="by turning it on you will recive notofication for drink water."
-        android:textStyle="bold"
         android:textSize="14sp"
+        android:fontFamily="@font/amiko"
         android:layout_margin="5dp"
         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorPrimary"
+        />
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Here to Test Notification"
-        android:textStyle="bold"
-        android:background="@color/colorPrimary"
+        android:text="Send me a Test Notification"
         android:layout_margin="20dp"
         android:textSize="20sp"
         android:id="@+id/click"
-        android:textAlignment="center"
-        android:textColor="@color/White"/>
+        android:fontFamily="@font/amiko"
+        android:textColor="@color/colorPrimary"/>
 
 </LinearLayout>

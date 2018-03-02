@@ -20,14 +20,13 @@ import org.w3c.dom.Text;
 
 class AdapterProduct extends RecyclerView.Adapter{
     FragmentActivity ctx;
-    int img[],price[];
+    int img[];
     String []details;
-    public AdapterProduct(FragmentActivity ct, int[] i,String []detail,int []price)
+    public AdapterProduct(FragmentActivity ct, int[] i,String []detail)
     {
         this.ctx = ct;
         this.img = i;
         this.details=detail;
-        this.price=price;
     }
 
 
@@ -46,7 +45,6 @@ class AdapterProduct extends RecyclerView.Adapter{
         Productholder productholder = (Productholder) holder;
         productholder.product_image.setImageResource(img[position]);
         productholder.Product_detail.setText(details[position]);
-        productholder.Product_price.setText(price[position]+"");
     }
 
 
@@ -76,7 +74,6 @@ class AdapterProduct extends RecyclerView.Adapter{
             Product = (LinearLayout) itemView.findViewById(R.id.product);
             product_image = (ImageView)itemView.findViewById(R.id.product_image);
             Product_detail = (TextView)itemView.findViewById(R.id.Detail);
-            Product_price = (TextView)itemView.findViewById(R.id.rate);
             Product.setOnClickListener(this);
         }
 

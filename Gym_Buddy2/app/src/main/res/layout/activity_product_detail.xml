@@ -3,6 +3,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/White"
     >
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -21,41 +22,105 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             />
     </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
+        android:layout_height="180dp"
+        android:background="@color/White"
+        android:scaleType="center"
         android:src="@drawable/whey"
+        android:id="@+id/product"
         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/Black"
+        ></View>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="MuscleBlaze Raw Whey Protien(1 Kg,Choclate Flavoured)"
         android:textColor="@color/Black"
         android:layout_margin="3dp"
+        android:id="@+id/name"
+        android:fontFamily="@font/amiko"
         />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$134"
-        android:textSize="25dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/Black"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="10dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/Black"
-        android:text="Free Shipping"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Muscle Blaze Raw Whey Protein is the mot raw and cleanest form whey protien concentrate with no sweetner , or additives in the product."
         android:layout_margin="10dp"
+        android:textColor="@color/Black"
+        android:id="@+id/description"
+        android:fontFamily="@font/amiko"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Now !!!"
+        android:textAlignment="center"
+        android:textColor="@color/light_red"
+        android:fontFamily="@font/amiko"
+        android:textSize="20sp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91-9460801495"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp"
+            android:background="@color/White"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:id="@+id/call_2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91-7737811786"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_black_24dp"
+            android:background="@color/White"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:id="@+id/call_1"
+            />
+    </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+
+
+
 
 
 </LinearLayout>
