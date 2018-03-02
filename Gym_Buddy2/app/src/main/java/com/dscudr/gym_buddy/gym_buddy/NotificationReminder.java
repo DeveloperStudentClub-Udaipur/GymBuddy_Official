@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 import android.widget.Toast;
+import com.dscudr.gym_buddy.gym_buddy.activity.MainActivity;
 
 public class NotificationReminder extends BroadcastReceiver {
 

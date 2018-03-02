@@ -1,14 +1,10 @@
-package com.dscudr.gym_buddy.gym_buddy;
+package com.dscudr.gym_buddy.gym_buddy.adapter;
 
 /**
  * Created by Monty on 01-02-2018.
  */
 
-import android.app.Activity;
-import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
-import android.net.NetworkInfo;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -17,10 +13,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.os.Bundle;
+import com.dscudr.gym_buddy.gym_buddy.DetailedExercise;
+import com.dscudr.gym_buddy.gym_buddy.R;
 
 /**
  * Created by Monty on 30-12-2017.

@@ -1,4 +1,4 @@
-package com.dscudr.gym_buddy.gym_buddy;
+package com.dscudr.gym_buddy.gym_buddy.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +19,15 @@ import android.widget.RelativeLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.dscudr.gym_buddy.gym_buddy.AboutUs;
+import com.dscudr.gym_buddy.gym_buddy.BodyPartWise;
+import com.dscudr.gym_buddy.gym_buddy.Competitions;
+import com.dscudr.gym_buddy.gym_buddy.DayWise;
+import com.dscudr.gym_buddy.gym_buddy.DietPlans;
+import com.dscudr.gym_buddy.gym_buddy.R;
+import com.dscudr.gym_buddy.gym_buddy.Settings;
+import com.dscudr.gym_buddy.gym_buddy.Suppliments;
+import com.dscudr.gym_buddy.gym_buddy.Utilities;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -63,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mHandler = new Handler();
-
 
         // Navigation view header
         navHeader = navView.getHeaderView(0);
@@ -316,7 +324,7 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_Share) {
             Intent in = new Intent(Intent.ACTION_SEND);
             in.setType("plain/text");
-            in.putExtra(Intent.EXTRA_TEXT, "Hey ! there I am Using A Great App fOR Gyming You Would Try Here is the link -> goo.gl/UBQLcs");
+            in.putExtra(Intent.EXTRA_TEXT, "Hey ! there I am Using A Great App for Gyming You Would Try Here is the link -> goo.gl/UBQLcs");
             startActivity(Intent.createChooser(in, "SHARE APP"));
 
             return true;

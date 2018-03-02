@@ -1,4 +1,4 @@
-package com.dscudr.gym_buddy.gym_buddy;
+package com.dscudr.gym_buddy.gym_buddy.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import com.dscudr.gym_buddy.gym_buddy.PartWiseExercise;
+import com.dscudr.gym_buddy.gym_buddy.R;
 
 /**
  * Created by Monty on 03-02-2018.

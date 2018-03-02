@@ -1,15 +1,14 @@
 package com.dscudr.gym_buddy.gym_buddy;
 
 import android.os.Bundle;
-import android.support.design.widget.AppBarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.dscudr.gym_buddy.gym_buddy.adapter.Adapter;
 
 public class PartWiseExercise extends AppCompatActivity {
 
