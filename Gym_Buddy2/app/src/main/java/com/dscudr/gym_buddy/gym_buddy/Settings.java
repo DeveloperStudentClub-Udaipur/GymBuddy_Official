@@ -15,7 +15,6 @@ import android.support.v4.app.NotificationManagerCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -24,6 +23,8 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+
+import com.dscudr.gym_buddy.gym_buddy.activity.MainActivity;
 
 
 /**
@@ -43,8 +44,6 @@ public class Settings extends Fragment {
     }
 
     SharedPreferences sharedPreferences;
-    AlarmManager alarmManager;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -80,14 +79,12 @@ public class Settings extends Fragment {
         swSetting.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked == true) {
-                    Toast.makeText(getContext(), "function called gymbuddy", Toast.LENGTH_SHORT).show();
+                if (isChecked) {
                     Intent intent = new Intent();
                     intent.setAction("com.dscudpr.gymbuddy");
                     intent.addCategory("android.intent.category.DEFAULT");
                     PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
                     alarmManager.setRepeating(alarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000 * 3600, pendingIntent);
-                    Toast.makeText(getContext(), "Alarm set ", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getContext().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putInt("Notification", 1);
@@ -98,7 +95,6 @@ public class Settings extends Fragment {
                     intent.addCategory("android.intent.category.DEFAULT");
                     PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
                     alarmManager.cancel(pendingIntent);
-                    Toast.makeText(getContext(), "Alarm unset gymbuddy", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getActivity().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putInt("Notification", 0);
@@ -124,7 +120,6 @@ public class Settings extends Fragment {
 
             }
         });
-
 
 
         return view;

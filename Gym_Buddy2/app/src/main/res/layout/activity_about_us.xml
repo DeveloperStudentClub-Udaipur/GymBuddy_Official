@@ -1,183 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.dscudr.gym_buddy.gym_buddy.AboutUs"
+    android:background="@color/White"
+  >
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.dscudr.gym_buddy.gym_buddy.AboutUs"
-        >
+        android:layout_height="wrap_content">
+
         <RelativeLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/linearLayout"
-                android:background="@color/Black">
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="125dp"
-                    android:layout_height="125dp"
-                    android:layout_alignLeft="@+id/textView4"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignStart="@+id/textView4"
-                    android:layout_marginLeft="21dp"
-                    android:layout_marginStart="21dp"
-                    android:layout_marginTop="21dp"
-                    android:src="@drawable/dsc"
-                    tools:ignore="NotSibling"
-                    android:layout_margin="10dp"/>
+            android:layout_height="wrap_content"
+            android:background="@color/Black">
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignLeft="@+id/textView2"
-                    android:layout_alignStart="@+id/textView2"
-                    android:layout_alignTop="@+id/imageView"
-                    android:layout_marginTop="12dp"
-                    android:text="Developer"
-                    android:textColor="@color/White"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/textView"
-                    android:layout_marginEnd="17dp"
-                    android:layout_marginRight="17dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_weight="1"
-                    android:text="Student Club"
-                    android:textColor="@color/White"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-            </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/dsc"
+                tools:ignore="NotSibling" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/linearLayout"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:text="@string/abt_dsc"
-                android:fontFamily="@font/amiko"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/heading_big"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginTop="12dp"
+                android:text="Developer"
+                android:textColor="@color/White"
+                android:textSize="30sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView3"
-                android:layout_marginTop="22dp"
-                android:text="@string/about"
-                android:textColor="@color/Black"
-                android:fontFamily="@font/amiko"
-                android:textSize="@dimen/para_con"
-                android:layout_margin="15dp"
-                />
 
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView4"
-                android:layout_centerHorizontal="true"
-                android:text="@string/sdcl"
-                android:textColor="@color/Black"
-                android:fontFamily="@font/amiko"
-                android:textSize="@dimen/heading_small"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/textView5"
-                android:id="@+id/textView6"
-                android:layout_centerHorizontal="true"
-                android:text="Akshay Nandwana"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/developer_name"
-                android:fontFamily="@font/amiko"
-                android:layout_margin="10dp"
-
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView7"
-                android:layout_below="@+id/textView6"
-                android:layout_centerHorizontal="true"
-                android:text="Application Developed By :-"
-                android:textColor="@color/Black"
-                android:fontFamily="@font/amiko"
-                android:textSize="@dimen/heading_small"
-                android:textStyle="bold"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView8"
-                android:layout_below="@+id/textView7"
-                android:layout_centerHorizontal="true"
-                android:text="Mohit Chug"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/developer_name"
-                android:layout_margin="10dp"
-                android:fontFamily="@font/amiko"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView9"
-                android:layout_below="@+id/textView8"
-                android:layout_centerHorizontal="true"
-                android:text="@string/contact"
-                android:fontFamily="@font/amiko"
-                android:textColor="@color/Black"
-                android:textSize="@dimen/heading_big"
-                android:textStyle="bold"
-                android:layout_margin="10dp"
-                />
-
-            <ImageButton
-                android:id="@+id/facebook"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_below="@+id/textView9"
-                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
                 android:layout_marginTop="11dp"
-                android:src="@drawable/fb"
-                android:scaleType="fitCenter"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/Phone"
-                android:layout_centerHorizontal="true"
-                android:text="@string/phone"
-                android:textColor="@color/Black"
-                android:fontFamily="@font/amiko"
-                android:textSize="@dimen/heading_big"
-                android:layout_margin="10dp"
-                android:layout_below="@id/facebook" />
-
-
-
-
+                android:text="Student Club"
+                android:textColor="@color/White"
+                android:textSize="30sp"
+                android:textStyle="bold" />
         </RelativeLayout>
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/amiko"
+            android:text="@string/abt_dsc"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    </ScrollView>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_margin="15dp"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/amiko"
+            android:text="@string/about"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/para_con" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/amiko"
+            android:text="@string/sdcl"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/amiko"
+            android:text="Akshay Nandwana"
+            android:textColor="@color/Black"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/amiko"
+            android:text="Application Developed By :-"
+            android:textColor="@color/Black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/amiko"
+            android:text="Mohit Chug"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/developer_name" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/amiko"
+            android:text="@string/contact"
+            android:textColor="@color/Black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/facebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitEnd"
+            android:background="@color/White"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/fb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/margin_8dp"
+            android:fontFamily="@font/amiko"
+            android:text="@string/phone"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/text_heading_24sp" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/facebook"
+            android:id="@+id/call"
+            android:layout_toStartOf="@+id/textView3"
+            android:background="@color/White"
+            android:src="@drawable/ic_call_black_24dp"
+            android:contentDescription="@string/call_icon_desc"
+            />
+
+    </RelativeLayout>
+</ScrollView>

@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,20 +17,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amiko"
-                android:text="Physique"
+                android:text="@string/physique_title"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25dp" />
+                android:textSize="@dimen/text_heading_24sp" />
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="@dimen/compition_tile_height"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:src="@drawable/menphysique"
                 android:id="@+id/gif"
-                android:elevation="8dp"
                 android:scaleType="fitXY"
-                android:layout_below="@id/appBarLayout"
                 android:background="@color/White"
                 />
         </LinearLayout>
@@ -44,26 +42,26 @@
                 android:id="@+id/description"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="12sp"
-                android:layout_margin="20dp"
+                android:textSize="@dimen/text_12"
+                android:layout_margin="@dimen/margin_16dp"
                 android:textStyle="bold"
                 />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimary"
-                ></View>
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_16"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
-                android:text="Senior men’s physique:"
+                android:text="@string/senior_mens_physique_title"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -71,27 +69,27 @@
                 android:id="@+id/classes_1"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_14"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
                 />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimary"
-                ></View>
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="16sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_16"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
-                android:text="Junior men’s physique:"
+                android:text="@string/junior_mens_physique_title"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -99,27 +97,27 @@
                 android:id="@+id/classes_2"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_14"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
                 />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimary"
-                ></View>
+                />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="16sp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_16"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:textStyle="bold"
-                android:text="Masters Men’s Physique:"
+                android:text="@string/masters_mens_physique_title"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -127,26 +125,26 @@
                 android:id="@+id/classes_3"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_14"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
                 />
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorPrimary"
-                ></View>
+                />
             <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/Black"
             android:fontFamily="@font/amiko"
-            android:textSize="16sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_16"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_8dp"
             android:textStyle="bold"
-            android:text="Women´s Physique:"
+            android:text="@string/womens_physique_title"
             />
             <TextView
                 android:layout_width="match_parent"
@@ -154,9 +152,9 @@
                 android:id="@+id/classes_4"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="14sp"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/text_14"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginStart="@dimen/margin_16dp"
                 android:textStyle="bold"
                 />
         </LinearLayout>

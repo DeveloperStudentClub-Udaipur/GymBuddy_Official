@@ -9,6 +9,7 @@ import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 import android.widget.Toast;
+import com.dscudr.gym_buddy.gym_buddy.activity.MainActivity;
 
 public class NotificationReminder extends BroadcastReceiver {
 
@@ -26,6 +27,5 @@ public class NotificationReminder extends BroadcastReceiver {
         noti.setContentIntent(pd);
         noti.setAutoCancel(true);
         managerCompat.notify(1, noti.build());
-        Toast.makeText(context,"inside reciver Gymbuddy ",Toast.LENGTH_SHORT).show();
     }
 }

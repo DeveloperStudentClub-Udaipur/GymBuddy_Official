@@ -30,23 +30,23 @@ public class WeightLifting extends Fragment {
             "\tb) The Clean and Jerk.\n";
     String man_w =
             " 56 kg \n" +
-            " 62 kg \n" +
-            " 69 kg \n" +
-            " 77 kg \n" +
-            " 85 kg \n" +
-            " 94 kg \n" +
-            "105 kg \n" +
-            "105 kg +\n";
+                    " 62 kg \n" +
+                    " 69 kg \n" +
+                    " 77 kg \n" +
+                    " 85 kg \n" +
+                    " 94 kg \n" +
+                    "105 kg \n" +
+                    "105 kg +\n";
 
     String women_w =
             " 48 kg \n" +
-            " 53 kg \n" +
-            " 58 kg \n" +
-            " 63 kg \n" +
-            " 69 kg \n" +
-            " 75 kg \n" +
-            " 90 kg \n" +
-            " 90 kg +\n";
+                    " 53 kg \n" +
+                    " 58 kg \n" +
+                    " 63 kg \n" +
+                    " 69 kg \n" +
+                    " 75 kg \n" +
+                    " 90 kg \n" +
+                    " 90 kg +\n";
     @BindView(R.id.gif)
     GifImageView gif;
     @BindView(R.id.description)
@@ -72,7 +72,6 @@ public class WeightLifting extends Fragment {
         description.setText(desc);
         manWeight.setText(man_w);
         womenWeight.setText(women_w);
-
         unbinder = ButterKnife.bind(this, view);
         return view;
     }

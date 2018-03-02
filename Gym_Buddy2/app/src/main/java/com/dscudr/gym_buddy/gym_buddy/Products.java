@@ -39,9 +39,9 @@ public class Products extends Fragment {
         unbinder = ButterKnife.bind(this, view);
         name = getResources().getStringArray(R.array.protien_name);
         adapterProduct = new AdapterProduct(getActivity(), img, name);
-        recycleProduct = (RecyclerView) view.findViewById(R.id.recycle_product);
+        recycleProduct = view.findViewById(R.id.recycle_product);
         recycleProduct.setAdapter(adapterProduct);
-        int col=4;
+        int col;
         if(getResources().getBoolean(R.bool.ori))
         {
             col = 2;

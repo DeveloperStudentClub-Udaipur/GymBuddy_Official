@@ -2,11 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content" android:layout_height="wrap_content">
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_width="@dimen/part_wise_tile_width"
+        android:layout_height="@dimen/part_wise_tile_height"
         android:src="@drawable/chest"
+        android:contentDescription="@string/exercise_description"
         android:scaleType="fitXY"
         android:id="@+id/part"
-        android:layout_margin="10dp"
+        android:layout_margin="@dimen/margin_8dp"
         />
 </RelativeLayout>

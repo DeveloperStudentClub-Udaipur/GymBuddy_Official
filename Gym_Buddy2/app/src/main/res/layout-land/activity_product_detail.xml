@@ -36,7 +36,6 @@
                 android:layout_height="match_parent"
                 android:background="@color/White"
                 android:scaleType="fitXY"
-                android:src="@drawable/whey"
                 android:id="@+id/product"
                 />
         </LinearLayout>

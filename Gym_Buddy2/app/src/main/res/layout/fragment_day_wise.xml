@@ -10,8 +10,6 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:background="@color/colorPrimary"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:tabSelectedTextColor="@color/grey"
@@ -24,9 +22,6 @@
         android:id="@+id/mypager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/tabLayout"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 </LinearLayout>

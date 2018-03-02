@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="10dp"
         android:id="@+id/appBarLayout">
         <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout_suppliment"
@@ -26,10 +25,6 @@
         android:id="@+id/mypager_suppliment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/appBarLayout"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 

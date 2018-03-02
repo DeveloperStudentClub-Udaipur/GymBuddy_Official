@@ -4,13 +4,12 @@ package com.dscudr.gym_buddy.gym_buddy.DayFragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dscudr.gym_buddy.gym_buddy.Adapter;
+import com.dscudr.gym_buddy.gym_buddy.adapter.Adapter;
 import com.dscudr.gym_buddy.gym_buddy.R;
 
 import butterknife.BindView;
@@ -23,7 +22,7 @@ import butterknife.Unbinder;
 public class FridayFragmentClass extends Fragment {
 
 
-    Adapter md;
+    Adapter adapter;
     int image_rec[] = {R.drawable.dumbell_curls, R.drawable.preachers_curls, R.drawable.cable_curls, R.drawable.concentration_curls, R.drawable.triceps_extention_curls, R.drawable.triceps_extention_cable, R.drawable.militry_press, R.drawable.dumbell_press, R.drawable.seated_militry_press, R.drawable.dumbell_lateral_raises, R.drawable.cable_front_raises, R.drawable.up_right_rows, R.drawable.crunch};
     String[] name;
     @BindView(R.id.recycle)
@@ -42,8 +41,8 @@ public class FridayFragmentClass extends Fragment {
         View view = inflater.inflate(R.layout.fragment_friday_fragment_class, container, false);
         unbinder = ButterKnife.bind(this, view);
         name = getResources().getStringArray(R.array.exercise_name_tue_fri);
-        md = new Adapter(getActivity(), image_rec, name, "friday");
-        recycle.setAdapter(md);
+        adapter = new Adapter(getActivity(), image_rec, name, "friday");
+        recycle.setAdapter(adapter);
         int col;
 
         if(getResources().getBoolean(R.bool.ori))

@@ -1,7 +1,6 @@
 package com.dscudr.gym_buddy.gym_buddy;
 
 
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
@@ -76,7 +75,7 @@ public class DietPlans extends Fragment {
 
 class pagerAdapter_diet extends FragmentPagerAdapter {
 
-    String data[] = {"Veg.", "Non Veg."};
+    private  String data[] = {"Veg.", "Non Veg."};
 
     public pagerAdapter_diet(FragmentManager fm) {
         super(fm);

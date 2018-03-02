@@ -29,12 +29,12 @@
         <item
             android:id="@+id/supplimens"
             android:icon="@drawable/ic_business_center_black_24dp"
-            android:title="Dietary Suppliments"/>
+            android:title="@string/dietary_Suppliments"/>
 
 
             <item
                 android:id="@+id/nav_setting"
                 android:icon="@drawable/ic_settings_black_24dp"
-                android:title="Setting" />
+                android:title="@string/setting" />
     </group>
 </menu>
