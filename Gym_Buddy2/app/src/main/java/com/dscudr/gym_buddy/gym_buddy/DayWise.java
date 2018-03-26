@@ -83,7 +83,7 @@ public class DayWise extends Fragment {
 
 class pagerAdapter extends FragmentPagerAdapter {
 
-    String data[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    private  String data[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     public pagerAdapter(FragmentManager fm) {
         super(fm);

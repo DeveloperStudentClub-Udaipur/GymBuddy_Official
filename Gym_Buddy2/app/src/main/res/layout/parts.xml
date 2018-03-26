@@ -6,11 +6,12 @@
     >
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="@dimen/part_wise_tile_height"
         android:src="@drawable/chest"
         android:scaleType="fitXY"
         android:id="@+id/part"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginBottom="@dimen/margin_4dp"
+        android:contentDescription="@string/exercise_description"
         />
 </RelativeLayout>

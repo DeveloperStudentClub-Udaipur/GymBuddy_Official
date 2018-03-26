@@ -5,7 +5,7 @@
     tools:context="com.dscudr.gym_buddy.gym_buddy.BodyBuilding">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,19 +17,17 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/amiko"
                 android:textStyle="bold"
-                android:text="Body Building"
+                android:text="@string/body_building_title"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="25dp" />
+                android:textSize="@dimen/text_heading_24sp" />
             <pl.droidsonroids.gif.GifImageView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="@dimen/compition_tile_height"
+                android:layout_marginTop="@dimen/margin_8dp"
                 android:src="@drawable/bodybuilding"
                 android:id="@+id/gif"
-                android:elevation="8dp"
                 android:scaleType="fitXY"
-                android:layout_below="@id/appBarLayout"
                 android:background="@color/White"
                 />
         </LinearLayout>
@@ -50,9 +48,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Junior Men's Body Building"
-                android:textSize="16dp"
-                android:layout_marginLeft="10dp"
+                android:text="@string/Junior_Mens_Body_Building_title"
+                android:textSize="@dimen/text_16"
+                android:layout_marginStart="@dimen/margin_8dp"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
                 />
@@ -68,11 +66,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Senior Men's Body Building"
-                android:textSize="16dp"
+                android:text="@string/Senior_Mens_Body_Building_title"
+                android:textSize="@dimen/text_16"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="@dimen/margin_8dp"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -80,15 +78,15 @@
                 android:id="@+id/senior_men"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="12sp"
-                android:layout_margin="20dp"
+                android:textSize="@dimen/text_12"
+                android:layout_margin="@dimen/margin_16dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Master Men's Body Building"
-                android:textSize="16dp"
-                android:layout_marginLeft="10dp"
+                android:text="@string/Master_Mens_Body_Building_title"
+                android:textSize="@dimen/text_16"
+                android:layout_marginStart="@dimen/margin_8dp"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
                 />
@@ -98,17 +96,17 @@
                 android:id="@+id/master_men"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="12sp"
-                android:layout_margin="20dp"
+                android:textSize="@dimen/text_12"
+                android:layout_margin="@dimen/margin_16dp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Women's Body Building"
-                android:textSize="16dp"
+                android:text="@string/Womens_Body_Building_title"
+                android:textSize="@dimen/text_16"
                 android:textColor="@color/Black"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
+                android:layout_marginStart="@dimen/margin_8dp"
                 />
             <TextView
                 android:layout_width="match_parent"
@@ -116,8 +114,8 @@
                 android:id="@+id/women"
                 android:textColor="@color/Black"
                 android:fontFamily="@font/amiko"
-                android:textSize="12sp"
-                android:layout_margin="20dp"
+                android:textSize="@dimen/text_12"
+                android:layout_margin="@dimen/margin_16dp"
                 />
 
 

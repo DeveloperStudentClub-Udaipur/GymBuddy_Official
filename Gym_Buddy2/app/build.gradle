@@ -4,13 +4,15 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.dscudr.gym_buddy.gym_buddy"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
-        release {
+    buildTypes
+    {
+        release
+        {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -30,4 +32,5 @@ dependencies
             implementation 'com.jakewharton:butterknife:8.8.1'
             annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
             implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.10'
+            implementation 'de.hdodenhof:circleimageview:2.2.0'
         }

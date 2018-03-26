@@ -9,12 +9,17 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/appBarLayout">
+        android:id="@+id/appBarLayout"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
         <android.support.v7.widget.Toolbar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/toolbar"
-            app:titleTextColor="@color/White">
+            app:titleTextColor="@color/White"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
 
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>

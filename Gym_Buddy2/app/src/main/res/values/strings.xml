@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">Gym_Buddy</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Gym Buddy</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -19,10 +19,89 @@
     <string name="openDrawer">open_drawer</string>
     <string name="closeDrawer">close_drawer</string>
     <string name="prechercurl">1.) Place an EZ bar on the rack of preacher bench and load it with appropriate weight./n 2.) Adjust the bench and seating’s height until the benchreaches a comfortable position under across chest andunder armpits, while allowing full extension of upper armsand forearms.3.) Grasp bar with both hands and connect biceps tobring the bar towards the face.4.) Once at full concentration , with a controlled motionreverse the bar’s direction and back until the biceps are extended to complete the repetition.</string>
-
+    <string name="protien_description">This is a Image of Protien Product.</string>
+    <string name="exercise_description">This is a Image of Exercise.</string>
+    <string name="weight_lifting">Weight Lifting</string>
+    <string name="weight_class">Weight Class:</string>
+    <string name="men_weight_class">Men\'s Weight Class:</string>
+    <string name="women_weight_class">Women\'s Weight Class:</string>
+    <string name="time_7">7 AM</string>
+    <string name="time_7_30">7:30 AM</string>
+    <string name="luke_water">2 Glass Luke warm Water</string>
+    <string name="dry_fruits">Soaked 5 Almonds , 1 walnut , 1 Anjeer , other dryfruit</string>
+    <string name="breakfast_title">Breakfast</string>
+    <string name="breakfast">Banana, Milkshake / Sprouds / Poha / Upma / sandwich</string>
+    <string name="lunch_title">Lunch</string>
+    <string name="lunch">Salad + 2 Chapati + 60 ml curd + 1 veg. + 1 bowl Daal</string>
+    <string name="Dinner_title">Dinner</string>
+    <string name="Dinner">Soup + 2 Rotis + 2 Bowl veg.+ salad + Daal</string>
+    <string name="before_bed_title">Before Bed</string>
+    <string name="before_bed">1 Glass Milk  + Apple</string>
+    <string name="food_image_desc">This is image of food.</string>
+    <string name="water_calculator_utility">Water Calculator</string>
+    <string name="bmi_calculator_utility">BMI Calculator</string>
+    <string name="utility_icon_desc">This is utility icon.</string>
+    <string name="notification_title">Notification</string>
+    <string name="Water_Reminder_Notificatios">Water Reminder Notifications</string>
+    <string name="notification_explanation">by turning it on you will recive notofication for drink water.</string>
+    <string name="test_notification_text">Send me a Test Notification</string>
+    <string name="whey_protien_title">Whey Protien</string>
+    <string name="whey_protien_text">romoe lean muscle growth and fat lose , Cardiovascular health.</string>
+    <string name="egg_protien_title">Egg Protien</string>
+    <string name="egg_protien_text">Obtained after dehydration of egg whites Exclusive source of vitamins and minrals</string>
+    <string name="casien_protien_title">Casien Protien</string>
+    <string name="casien_protien_text">Formed from eperation of milk with a acidic solution helps in fat gain</string>
+    <string name="power_lifting_title">Power Lifting</string>
+    <string name="age_class">Age Classes :</string>
+    <string name="physique_title">Physique</string>
+    <string name="senior_mens_physique_title">Senior Men’s Physique:</string>
+    <string name="junior_mens_physique_title">Junior Men’s Physique:</string>
+    <string name="masters_mens_physique_title">Masters Men’s Physique:</string>
+    <string name="womens_physique_title">Women´s Physique:</string>
+    <string name="Dinner_nonveg">Soup + 2 Rotis + Chicken/ Fish / Mutton + 3 Whole Boiled Egg</string>
+    <string name="lunch_non_veg">Salad + Fish / Chicken + 60 ml curd + 1 veg. + 2 roti</string>
+    <string name="breakfast_nonveg">2 Boiled Egg / 2 Scrambelled egg / 2 Egg\'s Omlet</string>
+    <string name="Womens_Body_Building_title">Women\'s Body Building:</string>
+    <string name="Master_Mens_Body_Building_title">Master Men\'s Body Building:</string>
+    <string name="Senior_Mens_Body_Building_title">Senior Men\'s Body Building:</string>
+    <string name="Junior_Mens_Body_Building_title">Junior Men\'s Body Building:</string>
+    <string name="body_building_title">Body Building</string>
+    <string name="exercise_image">This is image of exersice</string>
+    <string name="unit_kg">Kg</string>
+    <string name="unit_inch">Inch</string>
+    <string name="unit_cm">Cm</string>
+    <string name="unit_feet">Feet</string>
+    <string name="unit_lbs">Lbs</string>
+    <string name="calculate">Calculate</string>
+    <string name="Reminder_Notification">Reminder Notification</string>
+    <string name="call_icon_desc">This is an call icon</string>
+    <string name="contact_no_2">+91-7737811786</string>
+    <string name="contact_no_1">+91-9460801495</string>
+    <string name="order_now">Order Now !!!</string>
+    <string name="product_image_desc">this is image of product</string>
+    <string name="description">Description</string>
+    <string name="set_1">set-1 : 15 Rep. </string>
+    <string name="set_2">set-2 : 12 Rep. </string>
+    <string name="set_3">set-3 : 10 Rep. </string>
+    <string name="set_4">set-4 : 08 Rep. </string>
+    <string name="set_02">2 Sets</string>
+    <string name="set_03">3 Sets</string>
+    <string name="set_04">4 Sets</string>
+    <string name="advance">Advance</string>
+    <string name="intermidiate">Intermidiate</string>
+    <string name="biginner">Beginner</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="Obse">Obse &#62; 30</string>
+    <string name="Overweight">24.5 &#60; Overweight &#60; 30</string>
+    <string name="Normal">18.5 &#60; Normal &#60; 24.5</string>
+    <string name="Underweight">Underweight &#60; 18.5</string>
+    <string name="setting">Setting</string>
+    <string name="dietary_Suppliments">Dietary Suppliments</string>
+    <string name="exercise">Exercise</string>
     <string-array name="nav_item_activity_titles">
-        <item>Day Wise</item>
-        <item>Body Part Wise</item>
+        <item>Day</item>
+        <item>Body Part</item>
         <item>Diet Plans</item>
         <item>Utilities</item>
         <item>Dietary Suppliments</item>
@@ -33,5 +112,5 @@
 
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

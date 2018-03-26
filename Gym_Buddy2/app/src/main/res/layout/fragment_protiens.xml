@@ -6,61 +6,62 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Whey Protien"
+            android:text="@string/whey_protien_title"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_heading_20sp"
+            android:layout_marginTop="@dimen/margin_16dp"
             android:fontFamily="@font/amiko"
             android:textAlignment="center"
             />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="romoe lean muscle growth and fat lose , Cardiovascular health."
-            android:layout_margin="10dp"
+            android:text="@string/whey_protien_text"
+            android:layout_margin="@dimen/margin_8dp"
             android:fontFamily="@font/amiko"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_16"
             android:textColor="@color/Black"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Casien Protien"
+            android:text="@string/casien_protien_title"
             android:fontFamily="@font/amiko"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_heading_20sp"
             android:textAlignment="center"
             />
         <TextView
             android:layout_width="match_parent"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
+            android:layout_margin="@dimen/margin_8dp"
+            android:textSize="@dimen/text_16"
             android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
             android:layout_height="wrap_content"
-            android:text="Formed from eperation of milk with a acidic solution helps in fat gain"
+            android:text="@string/casien_protien_text"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Egg Protien"
+            android:text="@string/egg_protien_title"
             android:fontFamily="@font/amiko"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_heading_20sp"
             android:textAlignment="center"
             />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
+            android:layout_margin="@dimen/margin_8dp"
+            android:textSize="@dimen/text_16"
             android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
-            android:text="Obtained after dehydration of egg whites Exclusive source of vitamins and minrals"
+            android:text="@string/egg_protien_text"
             />
 
 

@@ -4,27 +4,24 @@
     android:layout_height="match_parent"
     tools:context="com.dscudr.gym_buddy.gym_buddy.Settings"
     android:orientation="vertical">
-
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Notifications"
-
-        android:textSize="25sp"
+        android:text="@string/notification_title"
+        android:textSize="@dimen/text_heading_24sp"
         android:fontFamily="@font/amiko"
-        android:textColor="#FF0000"
-        android:layout_margin="10dp"/>
+        android:textColor="@color/red"
+        android:layout_margin="@dimen/margin_8dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_margin="10dp">
+        android:layout_margin="@dimen/margin_8dp">
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Water Reminder Notificatios"
-            android:textSize="20sp"
+            android:text="@string/Water_Reminder_Notificatios"
+            android:textSize="@dimen/text_heading_20sp"
             android:fontFamily="@font/amiko"
             android:textColor="@color/Black"
             android:layout_weight="1"
@@ -39,10 +36,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="by turning it on you will recive notofication for drink water."
-        android:textSize="14sp"
+        android:text="@string/notification_explanation"
+        android:textSize="@dimen/text_14"
         android:fontFamily="@font/amiko"
-        android:layout_margin="5dp"
+        android:layout_margin="@dimen/margin_4dp"
         />
     <View
         android:layout_width="match_parent"
@@ -53,9 +50,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send me a Test Notification"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
+        android:text="@string/test_notification_text"
+        android:layout_margin="@dimen/margin_16dp"
+        android:textSize="@dimen/text_heading_20sp"
         android:id="@+id/click"
         android:fontFamily="@font/amiko"
         android:textColor="@color/colorPrimary"/>

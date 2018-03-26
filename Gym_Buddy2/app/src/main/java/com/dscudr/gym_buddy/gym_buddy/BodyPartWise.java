@@ -39,7 +39,7 @@ public class BodyPartWise extends Fragment {
         unbinder = ButterKnife.bind(this, view);
         md = new AdapterPartWise(getActivity(), image_rec);
         recycle.setAdapter(md);
-        int col=2;
+        int col;
         if(getResources().getBoolean(R.bool.ori))
         {
             col = 1;

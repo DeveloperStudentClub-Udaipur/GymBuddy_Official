@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="menu_text">
+        <item name="android:textAlignment">center</item>
+        android:fontFamily="@font/amiko"
+        android:padding="@dimen/margin_4dp"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/White"
+        android:background="@color/Black"
+        android:textStyle="bold"
+    </style>
+
+</resources>

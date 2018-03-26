@@ -9,36 +9,31 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.dscudr.gym_buddy.gym_buddy.PartWiseExercise;
 import com.dscudr.gym_buddy.gym_buddy.R;
-
-/**
- * Created by Monty on 03-02-2018.
- */
-
 public class AdapterPartWise extends RecyclerView.Adapter{
-    Context ctx;
-    int img[];
+    private  Context context;
+    private int image_drawable[];
 
-    public AdapterPartWise(Context ct, int[] i)
+    public AdapterPartWise(Context context, int[] image_drawable)
     {
-        this.ctx = ct;
-        this.img = i;
+        this.context = context;
+        this.image_drawable = image_drawable;
     }
 
 
     @Override
-    public imageholder onCreateViewHolder(ViewGroup parent, int viewType)
+    public ImageHolder onCreateViewHolder(ViewGroup parent, int viewType)
     {
-        LayoutInflater inflater = LayoutInflater.from(ctx);
+        LayoutInflater inflater = LayoutInflater.from(context);
         View myownview = inflater.inflate(R.layout.parts,parent,false);
-        return new imageholder(myownview,ctx);
+        return new ImageHolder(myownview,context);
     }
 
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position)
     {
-        imageholder mh = (imageholder)holder;
-        mh.i1.setImageResource(img[position]);
+        ImageHolder mh = (ImageHolder)holder;
+        mh.imageView.setImageResource(image_drawable[position]);
 
     }
 
@@ -46,7 +41,7 @@ public class AdapterPartWise extends RecyclerView.Adapter{
     @Override
     public int getItemCount()
     {
-        return img.length;
+        return image_drawable.length;
     }
 
     @Override
@@ -55,26 +50,25 @@ public class AdapterPartWise extends RecyclerView.Adapter{
         return (position);
     }
 
-    private class imageholder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        Context ctx;
-        ImageView i1;
-        int id;
+    private class ImageHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        Context context;
+        ImageView imageView;
 
-        public imageholder(View itemView,Context context)
+        private ImageHolder(View itemView,Context context)
         {
             super(itemView);
-            this.ctx = context;
-            i1 = (ImageView)itemView.findViewById(R.id.part);
-            i1.setOnClickListener(this);
+            this.context = context;
+            imageView = itemView.findViewById(R.id.part);
+            imageView.setOnClickListener(this);
         }
 
 
         @Override
         public void onClick(View v)
         {
-            Intent i = new Intent(ctx,PartWiseExercise.class);
+            Intent i = new Intent(context,PartWiseExercise.class);
             i.putExtra("id",getAdapterPosition());
-            ctx.startActivity(i);
+            context.startActivity(i);
 
         }
     }
