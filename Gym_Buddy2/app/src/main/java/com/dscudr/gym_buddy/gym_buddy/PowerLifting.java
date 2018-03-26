@@ -11,12 +11,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
-import pl.droidsonroids.gif.GifImageView;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class PowerLifting extends Fragment
 {
 

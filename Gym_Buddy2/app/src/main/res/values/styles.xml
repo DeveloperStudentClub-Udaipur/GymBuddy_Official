@@ -31,4 +31,21 @@
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@android:color/white</item>
     </style>
+    <style name="menu_text">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/amiko</item>
+        <item name="android:padding">@dimen/margin_4dp</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@color/Black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="menu_heading">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/amiko</item>
+        <item name="android:padding">@dimen/margin_8dp</item>
+        <item name="android:textSize">@dimen/text_heading_20sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

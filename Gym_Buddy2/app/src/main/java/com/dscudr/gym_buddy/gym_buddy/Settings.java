@@ -23,6 +23,7 @@ import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+
 import com.dscudr.gym_buddy.gym_buddy.activity.MainActivity;
 
 
@@ -43,8 +44,6 @@ public class Settings extends Fragment {
     }
 
     SharedPreferences sharedPreferences;
-    AlarmManager alarmManager;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -58,10 +57,10 @@ public class Settings extends Fragment {
                 Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
                 NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
                 NotificationCompat.Builder noti = new NotificationCompat.Builder(getContext());
-                noti.setContentText("It's Time to Get Hidrated");
-                noti.setContentTitle("Drink Water");
+                noti.setContentText("This is a Test Notification.");
+                noti.setContentTitle("Test Notification");
                 noti.setSound(sound);
-                noti.setSmallIcon(R.mipmap.ic_launcher);
+                noti.setSmallIcon(R.mipmap.gb_logo);
                 noti.setAutoCancel(true);
                 Intent i = new Intent(getContext(), MainActivity.class);
                 PendingIntent pd = PendingIntent.getActivity(getContext(), 1, i, 0);
@@ -80,14 +79,12 @@ public class Settings extends Fragment {
         swSetting.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked == true) {
-                    Toast.makeText(getContext(), "function called gymbuddy", Toast.LENGTH_SHORT).show();
+                if (isChecked) {
                     Intent intent = new Intent();
                     intent.setAction("com.dscudpr.gymbuddy");
                     intent.addCategory("android.intent.category.DEFAULT");
                     PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
                     alarmManager.setRepeating(alarmManager.RTC_WAKEUP, System.currentTimeMillis(), 1000 * 3600, pendingIntent);
-                    Toast.makeText(getContext(), "Alarm set ", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getContext().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putInt("Notification", 1);
@@ -98,7 +95,6 @@ public class Settings extends Fragment {
                     intent.addCategory("android.intent.category.DEFAULT");
                     PendingIntent pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
                     alarmManager.cancel(pendingIntent);
-                    Toast.makeText(getContext(), "Alarm unset gymbuddy", Toast.LENGTH_SHORT).show();
                     SharedPreferences sharedPreferences = getActivity().getSharedPreferences("reminder_settings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putInt("Notification", 0);
@@ -106,26 +102,6 @@ public class Settings extends Fragment {
                 }
             }
         });
-        click.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri sound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-                NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getContext());
-                NotificationCompat.Builder noti = new NotificationCompat.Builder(getContext());
-                noti.setContentText("It's Time to Get Hidrated");
-                noti.setContentTitle("Drink Water");
-                noti.setSound(sound);
-                noti.setSmallIcon(R.mipmap.ic_launcher);
-                Intent i = new Intent(getContext(), MainActivity.class);
-                PendingIntent pd = PendingIntent.getActivity(getContext(), 1, i, 0);
-                noti.setContentIntent(pd);
-                noti.setAutoCancel(true);
-                managerCompat.notify(1, noti.build());
-
-            }
-        });
-
-
 
         return view;
 

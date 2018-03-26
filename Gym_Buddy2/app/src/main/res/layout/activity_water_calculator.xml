@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="10dp"
         android:id="@+id/appbar"
         >
 
@@ -29,7 +28,7 @@
         android:id="@+id/info"
         android:layout_below="@id/appbar"
         android:text="@string/inform"
-        android:textSize="@dimen/text_heading_med"
+        android:textSize="@dimen/text_heading_20sp"
         android:fontFamily="@font/amiko"
         android:layout_margin="@dimen/margin_big"
         android:textColor="@color/Black"
@@ -43,14 +42,14 @@
         android:layout_below="@+id/info"
         android:textAlignment="center"
         android:textColor="@color/Black"
-        android:textSize="@dimen/text_standard"/>
+        android:textSize="@dimen/text_16"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/input_weight"
         android:layout_margin="@dimen/margin_big"
         android:layout_below="@id/hint"
-        android:hint="Kg"
+        android:hint="@string/unit_kg"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         />
@@ -59,14 +58,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/calculate"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/input_weight"
-        android:layout_margin="@dimen/margin_big"
-        android:text="Calculate"
+        android:layout_margin="@dimen/margin_16dp"
+        android:text="@string/calculate"
+        android:textColor="@color/White"
         android:fontFamily="@font/amiko"
-        android:backgroundTint="@color/blue_success"
-        android:backgroundTintMode="src_in"
+        android:background="@color/blue_success"
         />
 
     <TextView
@@ -76,19 +73,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/calculate"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="26dp"
         android:textAlignment="center"
+        android:layout_marginTop="@dimen/margin_16dp"
         android:textColor="@color/Black"
-        android:textSize="@dimen/text_heading_med" />
+        android:textSize="@dimen/text_heading_20sp"/>
 
     <RelativeLayout
         android:id="@+id/r_n"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/result"
-        android:layout_marginTop="69dp">
+        android:layout_marginTop="@dimen/margin_16dp"
+        >
 
 
         <Switch
@@ -98,22 +94,19 @@
             android:layout_alignBaseline="@+id/textView2"
             android:layout_alignBottom="@+id/textView2"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginEnd="84dp"
-            android:layout_marginRight="84dp" />
+            />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="42dp"
-            android:layout_marginStart="42dp"
             android:fontFamily="@font/amiko"
-            android:text="Reminder Notification"
-            android:textColor="@color/Black" />
+            android:textSize="@dimen/text_16"
+            android:text="@string/Reminder_Notification"
+            android:textColor="@color/Black"
+            android:layout_marginStart="@dimen/margin_16dp"
+            />
 
     </RelativeLayout>
 

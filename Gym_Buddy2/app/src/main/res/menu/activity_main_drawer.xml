@@ -9,11 +9,11 @@
         <item
             android:id="@+id/day_wise"
             android:icon="@drawable/ic_view_week_black_24dp"
-            android:title="Day Wise" />
+            android:title="Days" />
         <item
             android:id="@+id/b_part_wise"
             android:icon="@drawable/ic_accessibility_black_24dp"
-            android:title="Body Part Wise" />
+            android:title="Body Parts" />
         <item
             android:id="@+id/diet_plans"
             android:icon="@drawable/ic_restaurant_menu_black_24dp"
@@ -29,12 +29,12 @@
         <item
             android:id="@+id/supplimens"
             android:icon="@drawable/ic_business_center_black_24dp"
-            android:title="Dietary Suppliments"/>
+            android:title="@string/dietary_Suppliments"/>
 
 
             <item
                 android:id="@+id/nav_setting"
                 android:icon="@drawable/ic_settings_black_24dp"
-                android:title="Setting" />
+                android:title="@string/setting" />
     </group>
 </menu>

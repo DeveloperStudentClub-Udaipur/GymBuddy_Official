@@ -11,13 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dscudr.gym_buddy.gym_buddy.diet_types_fragment.NonVegFragment;
-import com.dscudr.gym_buddy.gym_buddy.diet_types_fragment.VegFragment;
-
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class Suppliments extends Fragment {
 
 
@@ -31,8 +24,8 @@ public class Suppliments extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_suppliments, container, false);
-        TabLayout tab = (TabLayout)view.findViewById(R.id.tabLayout_suppliment);
-        final ViewPager mypage = (ViewPager)view.findViewById(R.id.mypager_suppliment);
+        TabLayout tab = view.findViewById(R.id.tabLayout_suppliment);
+        final ViewPager mypage = view.findViewById(R.id.mypager_suppliment);
         mypage.setAdapter(new pagerAdapter_suppliment(getChildFragmentManager()));
 
         tab.setupWithViewPager(mypage);
@@ -56,13 +49,13 @@ public class Suppliments extends Fragment {
 
             }
         });
-    return view;
+        return view;
     }
 
 }
 class pagerAdapter_suppliment extends FragmentPagerAdapter {
 
-    String data[] ={"Products","Details"};
+    private String data[] ={"Products","Details"};
 
     public pagerAdapter_suppliment(FragmentManager fm) {
         super(fm);

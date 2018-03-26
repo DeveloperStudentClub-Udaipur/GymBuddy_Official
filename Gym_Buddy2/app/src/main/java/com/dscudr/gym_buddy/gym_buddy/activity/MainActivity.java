@@ -14,7 +14,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import butterknife.BindView;
@@ -40,13 +39,12 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.drawer_layout)
     DrawerLayout drawerLayout;
 
-    private View navHeader;
-    private ImageView imgProfile;
+
     public static int navItemIndex = 0;
 
     // tags used to attach the fragments
-    private static final String TAG_DAY_WISE = "Day Wise";
-    private static final String TAG_BODY_PART_WISE = "Body Part Wise";
+    private static final String TAG_DAY_WISE = "Days";
+    private static final String TAG_BODY_PART_WISE = "Body Parts";
     private static final String TAG_DIET_PLANES = "Diet Planes";
     private static final String TAG_UTILITEIS = "Utilities";
     private static final String TAG_COMPETITIONS = "Competitions";
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private String[] activityTitles;
 
     // flag to load home fragment when user presses back key
-    private boolean shouldLoadHomeFragOnBackPress = true;
+    boolean shouldLoadHomeFragOnBackPress = true;
     private Handler mHandler;
 
 
@@ -74,13 +72,9 @@ public class MainActivity extends AppCompatActivity {
         mHandler = new Handler();
 
         // Navigation view header
-        navHeader = navView.getHeaderView(0);
-
 
         // load toolbar titles from string resources
         activityTitles = getResources().getStringArray(R.array.titels);
-
-
         // load nav menu header data
         loadNavHeader();
 
@@ -146,36 +140,38 @@ public class MainActivity extends AppCompatActivity {
         invalidateOptionsMenu();
     }
 
-    private Fragment getHomeFragment() {
+    private Fragment getHomeFragment()
+    {
+        Fragment fragment;
         switch (navItemIndex) {
             case 0:
                 // daywisefragment
-                DayWise daywisefragment = new DayWise();
-                return daywisefragment;
+                fragment = new DayWise();
+                return fragment;
             case 1:
                 // bodypartwise
-                BodyPartWise bodyPartWiseFragment = new BodyPartWise();
-                return bodyPartWiseFragment;
+                fragment = new BodyPartWise();
+                return fragment;
             case 2:
                 // movies fragment
-                DietPlans dietPlans = new DietPlans();
-                return dietPlans;
+                fragment= new DietPlans();
+                return fragment;
             case 3:
                 // utilitiesfragment
-                Utilities utilitiesfragment = new Utilities();
-                return utilitiesfragment;
+                fragment= new Utilities();
+                return fragment;
             case 4:
                 // utilitiesfragment
-                Competitions competitions = new Competitions();
-                return competitions;
+                fragment= new Competitions();
+                return fragment;
             case 5:
                 // utilitiesfragment
-                Suppliments suppliments = new Suppliments();
-                return suppliments;
+                fragment= new Suppliments();
+                return fragment;
             case 6:
                 // utilitiesfragment
-                Settings setting = new Settings();
-                return setting;
+                fragment= new Settings();
+                return fragment;
             default:
                 return new BodyPartWise();
         }
@@ -297,9 +293,7 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
 
         // show menu only when home fragment is selected
-        if (navItemIndex == 0) {
             getMenuInflater().inflate(R.menu.main, menu);
-        }
 
 
 

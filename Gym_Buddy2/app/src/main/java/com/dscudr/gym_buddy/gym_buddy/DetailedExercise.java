@@ -64,8 +64,9 @@ public class DetailedExercise extends AppCompatActivity {
     ButterKnife.bind(this);
     setSupportActionBar(toolbar);
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    getSupportActionBar().setTitle(R.string.exercise);
 
-    GifImageView gifImageView = (GifImageView) findViewById(R.id.gif);
+    GifImageView gifImageView = (GifImageView)findViewById(R.id.gif);
     Bundle bundle = getIntent().getExtras();
     String name = (String) bundle.get("name");
     String cur = (String) bundle.get("cur_tab");

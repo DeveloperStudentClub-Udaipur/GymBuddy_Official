@@ -8,11 +8,4 @@
     tools:context="com.dscudr.gym_buddy.gym_buddy.activity.MainActivity"
     tools:showIn="@layout/app_bar_main"
     style="@style/AppTheme.NoActionBar">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
-
 </LinearLayout>

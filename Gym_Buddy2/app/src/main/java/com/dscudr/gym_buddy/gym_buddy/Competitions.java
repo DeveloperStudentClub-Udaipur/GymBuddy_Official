@@ -43,7 +43,15 @@ public class Competitions extends Fragment {
         mypager.setAdapter(new competitionsAdapter(getChildFragmentManager()));
 
         tabLayout.setupWithViewPager(mypager);
-        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        if(getResources().getBoolean(R.bool.ori))
+        {
+            tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        }
+        else
+        {
+            tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        }
+
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -73,7 +81,7 @@ public class Competitions extends Fragment {
 
 class competitionsAdapter extends FragmentPagerAdapter {
 
-    String data[] = {"Body Building", "Physique", "Weight Lifting", "Power Lifting"};
+    private String data[] = {"Body Building", "Physique", "Weight Lifting", "Power Lifting"};
 
     public competitionsAdapter(FragmentManager fm) {
         super(fm);

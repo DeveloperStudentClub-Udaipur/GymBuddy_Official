@@ -8,12 +8,15 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/appBarLayout">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appBarLayout"
+        >
         <android.support.v7.widget.Toolbar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/toolbar"
-            app:titleTextColor="@color/White">
+            app:titleTextColor="@color/White"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
@@ -22,6 +25,6 @@
         android:layout_height="match_parent"
         android:layout_below="@id/appBarLayout"
         android:id="@+id/recycle_part_wise"
-        >
-    </android.support.v7.widget.RecyclerView>
+        />
+
 </RelativeLayout>

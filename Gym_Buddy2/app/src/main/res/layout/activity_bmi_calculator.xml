@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="10dp"
+        android:elevation="@dimen/elevation_high"
         >
 
     <android.support.v7.widget.Toolbar
@@ -26,18 +26,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="290dp"
-        android:elevation="10dp"
+        android:layout_height="@dimen/exercise_tile_land"
+        android:elevation="@dimen/elevation_high"
         android:id="@+id/relativeLayout">
 
         <com.jackandphantom.circularprogressbar.CircleProgressbar
             android:id="@+id/yourCircularProgressbar"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="39dp"
+            android:layout_width="@dimen/exercise_height"
+            android:layout_height="@dimen/exercise_height"
             android:layout_marginStart="39dp"
             android:layout_marginTop="81dp"
             app:cpb_foregroundProgressColor="#1864c2"
@@ -50,23 +46,19 @@
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/yourCircularProgressbar"
             android:layout_alignEnd="@+id/yourCircularProgressbar"
-            android:layout_alignRight="@+id/yourCircularProgressbar"
-            android:layout_marginBottom="57dp"
-            android:layout_marginEnd="51dp"
-            android:layout_marginRight="51dp"
+            android:layout_marginBottom="@dimen/margin_big_50dp"
+            android:layout_marginEnd="@dimen/margin_big_50dp"
             android:text=""
             android:fontFamily="@font/amiko"
-            android:textSize="30sp" />
+            android:textSize="@dimen/text_heading_24sp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/yourCircularProgressbar"
-            android:layout_marginBottom="13dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:layout_marginStart="@dimen/margin_16dp"
             android:layout_toEndOf="@+id/bmi"
-            android:layout_toRightOf="@+id/bmi"
             android:orientation="vertical"
             android:id="@+id/linearLayout2"
 
@@ -75,9 +67,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Underweight &#60; 18.5"
-                android:textSize="12sp"
+                android:layout_margin="@dimen/margin_4dp"
+                android:text="@string/Underweight"
+                android:textSize="@dimen/text_12"
                 android:textStyle="bold"
                 android:fontFamily="@font/amiko"
                 android:textColor="@color/light_yellow"
@@ -86,10 +78,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/margin_4dp"
                 android:fontFamily="@font/amiko"
-                android:text="18.5 &#60; Normal &#60; 24.5"
-                android:textSize="12sp"
+                android:text="@string/Normal"
+                android:textSize="@dimen/text_12"
                 android:textColor="@color/light_green"
                 android:textStyle="bold"
                 />
@@ -97,19 +89,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="@dimen/margin_4dp"
                 android:fontFamily="@font/amiko"
-                android:text="24.5 &#60; Overweight &#60; 30"
-                android:textSize="12sp"
+                android:text="@string/Overweight"
+                android:textSize="@dimen/text_12"
                 android:textColor="@color/light_red"
                 android:textStyle="bold"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Obse &#62; 30"
-                android:textSize="12sp"
+                android:layout_margin="@dimen/margin_4dp"
+                android:text="@string/Obse"
+                android:textSize="@dimen/text_12"
                 android:fontFamily="@font/amiko"
                 android:textColor="@color/light_orange"
                 android:textStyle="bold"/>
@@ -122,8 +114,6 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/relativeLayout"
         android:id="@+id/linearLayout3">
         <LinearLayout
@@ -137,43 +127,44 @@
             android:layout_weight="1"
             android:fontFamily="@font/amiko"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="11dp"
-            android:text="Weight"
+            android:layout_marginBottom="@dimen/margin_8dp"
+            android:text="@string/weight"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="@dimen/text_heading_20sp" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Height"
+            android:text="@string/height"
             android:fontFamily="@font/amiko"
-            android:layout_marginBottom="11dp"
-
+            android:layout_marginBottom="@dimen/margin_8dp"
             android:textAlignment="center"
             android:layout_gravity="center"
             android:textColor="@android:color/black"
-            android:textSize="20sp"
+            android:textSize="@dimen/text_heading_20sp"
             android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_weight="1"
-            android:layout_marginLeft="50dp"
+            android:layout_marginStart="@dimen/margin_big_50dp"
             >
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="30dp"
+                android:layout_width="@dimen/input_feild_small"
                 android:layout_height="wrap_content"
-                android:text="Kg"
+                android:text="@string/unit_kg"
                 android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@color/Black" />
@@ -186,9 +177,9 @@
 
             <TextView
                 android:id="@+id/textView12"
-                android:layout_width="30dp"
+                android:layout_width="@dimen/input_feild_small"
                 android:layout_height="wrap_content"
-                android:text="lbs"
+                android:text="@string/unit_lbs"
                 android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
@@ -198,13 +189,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_weight="1"
-            android:layout_marginLeft="50dp">
+                android:layout_marginStart="@dimen/margin_big_50dp"
+            >
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="30dp"
+                android:layout_width="@dimen/input_feild_small"
                 android:layout_height="wrap_content"
-                android:text="Cm"
+                android:text="@string/unit_cm"
                 android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
@@ -215,9 +207,9 @@
             android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="30dp"
+                android:layout_width="@dimen/input_feild_small"
                 android:layout_height="wrap_content"
-                android:text="Feet"
+                android:text="@string/unit_feet"
                 android:fontFamily="@font/amiko"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
@@ -232,7 +224,7 @@
             android:id="@+id/weight"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:hint="Weight in Kgs"
+            android:hint="@string/unit_kg"
             android:fontFamily="@font/amiko"
             android:inputType="numberDecimal"
             android:textAlignment="center"
@@ -247,22 +239,22 @@
                 android:id="@+id/Feet"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:hint="Cm"
+                android:hint="@string/unit_cm"
                 android:fontFamily="@font/amiko"
                 android:inputType="number"
                 android:textAlignment="center"
-                android:textSize="14sp"
+                android:textSize="@dimen/text_14"
                 android:layout_weight="1"/>
 
             <EditText
                 android:id="@+id/Inch"
-                android:layout_width="60dp"
+                android:layout_width="@dimen/input_feild"
                 android:layout_height="wrap_content"
-                android:hint="Inch"
+                android:hint="@string/unit_inch"
                 android:fontFamily="@font/amiko"
                 android:inputType="number"
                 android:textAlignment="center"
-                android:textSize="14sp"
+                android:textSize="@dimen/text_14"
                 android:layout_weight="1"
                 android:visibility="gone"/>
 
@@ -274,20 +266,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:fontFamily="@font/amiko"
         android:layout_below="@+id/linearLayout3"
         android:background="@color/blue_success"
-        android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="11dp"
         android:textColor="@color/White"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:id="@+id/Calculate"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        android:layout_margin="20dp"
+        android:layout_margin="@dimen/margin_16dp"
         />
 
 

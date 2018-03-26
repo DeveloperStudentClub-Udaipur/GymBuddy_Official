@@ -5,4 +5,13 @@
         <item name="windowNoTitle">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+    <style name="menu_text">
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/amiko</item>
+        <item name="android:padding">@dimen/margin_4dp</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@color/Black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

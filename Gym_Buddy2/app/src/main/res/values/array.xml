@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="titels">
-        <item>Day Wise</item>
-        <item>Body Part Wise</item>
+        <item>Days</item>
+        <item>Body Parts</item>
         <item>Diet Plan</item>
         <item>Utilities</item>
         <item>Competitions</item>
